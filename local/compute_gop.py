@@ -93,11 +93,17 @@ for key in pdfalis.keys():
     gop_ratio = ratio_phones.mean()
 
     # write gop scores
-    f_f.write(' '.join((str(key), "\n", str(post_best), "\n",
-              str(like_best), "\n", str(like_max), "\n")))
-    f_p.write(' '.join((str(key), "\n", str(post_phones), "\n",
-              str(like_phones), "\n", str(list(ratio_phones)), "\n")))
-    f.write(' '.join((str(key), str(gop_post), str(gop_like), str(gop_ratio), "\n")))
+    f_f.write(f"{key}\n")
+    f_f.write(f"[{', '.join(f'{x:.6f}' for x in post_best)}]\n")
+    f_f.write(f"[{', '.join(f'{x:.6f}' for x in like_best)}]\n")
+    f_f.write(f"[{', '.join(f'{x:.6f}' for x in like_max)}]\n")
+    
+    f_p.write(f"{key}\n")
+    f_p.write(f"[{', '.join(f'{x:.6f}' for x in post_phones)}]\n")
+    f_p.write(f"[{', '.join(f'{x:.6f}' for x in like_phones)}]\n")
+    f_p.write(f"[{', '.join(f'{x:.6f}' for x in ratio_phones)}]\n")
+    
+    f.write(f"{key} {gop_post:.6f} {gop_like:.6f} {gop_ratio:.6f}\n")
 
 print('Write ' + frame_score_dest + ' for frame-level post_best, like_best and like_max.')
 print('Write ' + phone_score_dest + ' for phone-level post_phones, like_phones and ratio_phones.')

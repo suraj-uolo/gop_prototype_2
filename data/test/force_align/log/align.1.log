@@ -1,0 +1,17 @@
+# compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int data/test/force_align/tree exp/nnet3/tdnn/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 64 -f 2- data/lang/words.txt data/test/split1/1/text|" ark:- | nnet3-align-compiled --transition-scale=1.0 --acoustic-scale=1.0 --self-loop-scale=1.0 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --use-gpu=no --beam=200 --retry-beam=400 exp/nnet3/tdnn/final.mdl ark:- "ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- |" "ark:|gzip -c >data/test/force_align/ali.1.gz" 
+# Started at Fri Mar 28 11:26:16 IST 2025
+#
+compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int data/test/force_align/tree exp/nnet3/tdnn/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 64 -f 2- data/lang/words.txt data/test/split1/1/text|' ark:- 
+nnet3-align-compiled --transition-scale=1.0 --acoustic-scale=1.0 --self-loop-scale=1.0 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --use-gpu=no --beam=200 --retry-beam=400 exp/nnet3/tdnn/final.mdl ark:- 'ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- |' 'ark:|gzip -c >data/test/force_align/ali.1.gz' 
+LOG (nnet3-align-compiled[5.5.1168~1-01aad]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 2 orphan nodes.
+LOG (nnet3-align-compiled[5.5.1168~1-01aad]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 4 orphan components.
+LOG (nnet3-align-compiled[5.5.1168~1-01aad]:Collapse():nnet-utils.cc:1488) Added 2 components, removed 4
+LOG (compile-train-graphs[5.5.1168~1-01aad]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 1 graphs, failed for 0
+apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.5.1168~1-01aad]:main():apply-cmvn.cc:81) Copied 1 utterances.
+LOG (nnet3-align-compiled[5.5.1168~1-01aad]:main():nnet3-align-compiled.cc:198) Overall log-likelihood per frame is 1.71683 over 481 frames.
+LOG (nnet3-align-compiled[5.5.1168~1-01aad]:main():nnet3-align-compiled.cc:201) Retried 0 out of 1 utterances.
+LOG (nnet3-align-compiled[5.5.1168~1-01aad]:main():nnet3-align-compiled.cc:203) Done 1, errors on 0
+LOG (nnet3-align-compiled[5.5.1168~1-01aad]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.00439 seconds taken in nnet3 compilation total (breakdown: 0.00251 compilation, 0.000962 optimization, 0 shortcut expansion, 0.000189 checking, 9.54e-07 computing indexes, 0.000729 misc.) + 0 I/O.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Fri Mar 28 11:26:17 IST 2025, elapsed time 1 seconds

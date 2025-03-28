@@ -1,0 +1,40 @@
+Utterance: 011c0201
+Aligned Phones: SIL AY1_S L_B AY1_I K_E SIL AY1_B S_E SIL K_B R_I IY1_I M_E SIL B_B EH1_I T_I ER0_E DH_B AE1_I N_E CH_B AO1_I K_I L_I AH0_I T_I S_E SIL
+
+Pronunciation Analysis:
+
+Detailed Analysis:
+-----------------
+
+Pronunciation Scores:
+Posterior-based: -7.647 (Needs improvement)
+Likelihood-based: 0.743 (Excellent)
+Likelihood Ratio: -6.379 (Needs improvement)
+Score Consistency: Needs improvement
+Score Range: 13.128
+Score Median: -7.597
+
+Fluency Metrics:
+Speech Rate: 4.99 phones/sec (Good)
+Number of Pauses: 5
+Average Pause Duration: 0.336s
+Pause Ratio: 0.349 (Fair)
+Rhythm Variance: 0.011 (Good)
+
+Prosody Metrics:
+Stress Ratio: 0.000 (Needs improvement)
+Average Phone Duration: 0.130s
+Max Phone Duration: 0.430s
+Min Phone Duration: 0.030s
+
+Phoneme-level Analysis:
+
+Phonemes Needing Improvement:
+  L_B: -11.799
+  SIL: -11.658
+  AY1_I: -11.574
+  M_E: -8.398
+  IY1_I: -6.231
+  CH_B: -6.032
+
+==================================================

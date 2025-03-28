@@ -1,3 +1,0 @@
-[submodule "kaldi"]
-	path = kaldi
-	url = http://github.com/tzyll/kaldi.git

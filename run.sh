@@ -6,7 +6,7 @@
 
 stage=1
 # num of jobs
-nj=2
+nj=$1
 
 data=data/test
 # split the data for parallel jobs

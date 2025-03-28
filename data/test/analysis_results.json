@@ -1,0 +1,255 @@
+{
+  "utterances": [
+    {
+      "utterance_id": "011c0201",
+      "status": "success",
+      "speech_score": {
+        "transcript": "I LIKE ICE CREAM BETTER THAN CHOCOLATES",
+        "word_score_list": [
+          {
+            "word": "I",
+            "quality_score": 0.02333333333333328,
+            "phone_score_list": [
+              {
+                "phone": "AY1",
+                "quality_score": 0.02333333333333328,
+                "extent": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "word": "LIKE",
+            "quality_score": -9.313166666666667,
+            "phone_score_list": [
+              {
+                "phone": "L",
+                "quality_score": -4.5673156666666666,
+                "extent": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "phone": "AY1",
+                "quality_score": -11.798559,
+                "extent": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "phone": "K",
+                "quality_score": -11.573625333333334,
+                "extent": [
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          {
+            "word": "ICE",
+            "quality_score": -1.742129666666667,
+            "phone_score_list": [
+              {
+                "phone": "AY1",
+                "quality_score": -0.089005,
+                "extent": [
+                  3,
+                  4
+                ]
+              },
+              {
+                "phone": "S",
+                "quality_score": -3.395254333333334,
+                "extent": [
+                  4,
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "word": "CREAM",
+            "quality_score": -4.459227083333333,
+            "phone_score_list": [
+              {
+                "phone": "K",
+                "quality_score": -4.020286333333334,
+                "extent": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "phone": "R",
+                "quality_score": -4.408262666666666,
+                "extent": [
+                  6,
+                  7
+                ]
+              },
+              {
+                "phone": "IY1",
+                "quality_score": -3.904631333333333,
+                "extent": [
+                  7,
+                  8
+                ]
+              },
+              {
+                "phone": "M",
+                "quality_score": -5.503728,
+                "extent": [
+                  8,
+                  9
+                ]
+              }
+            ]
+          },
+          {
+            "word": "BETTER",
+            "quality_score": -7.596798,
+            "phone_score_list": [
+              {
+                "phone": "B",
+                "quality_score": -4.100717666666667,
+                "extent": [
+                  9,
+                  10
+                ]
+              },
+              {
+                "phone": "EH1",
+                "quality_score": -6.230784666666666,
+                "extent": [
+                  10,
+                  11
+                ]
+              },
+              {
+                "phone": "T",
+                "quality_score": -8.398082666666667,
+                "extent": [
+                  11,
+                  12
+                ]
+              },
+              {
+                "phone": "ER0",
+                "quality_score": -11.657606999999999,
+                "extent": [
+                  12,
+                  13
+                ]
+              }
+            ]
+          },
+          {
+            "word": "THAN",
+            "quality_score": -2.389302333333333,
+            "phone_score_list": [
+              {
+                "phone": "DH",
+                "quality_score": -5.7704303333333336,
+                "extent": [
+                  13,
+                  14
+                ]
+              },
+              {
+                "phone": "AE1",
+                "quality_score": -1.9859746666666667,
+                "extent": [
+                  14,
+                  15
+                ]
+              },
+              {
+                "phone": "N",
+                "quality_score": 0.588498,
+                "extent": [
+                  15,
+                  16
+                ]
+              }
+            ]
+          },
+          {
+            "word": "CHOCOLATES",
+            "quality_score": -2.7804557619047623,
+            "phone_score_list": [
+              {
+                "phone": "CH",
+                "quality_score": -4.317841666666666,
+                "extent": [
+                  16,
+                  17
+                ]
+              },
+              {
+                "phone": "AO1",
+                "quality_score": -0.7010049999999999,
+                "extent": [
+                  17,
+                  18
+                ]
+              },
+              {
+                "phone": "K",
+                "quality_score": -1.1315410000000001,
+                "extent": [
+                  18,
+                  19
+                ]
+              },
+              {
+                "phone": "L",
+                "quality_score": -2.041637,
+                "extent": [
+                  19,
+                  20
+                ]
+              },
+              {
+                "phone": "AH0",
+                "quality_score": -6.032046666666667,
+                "extent": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "phone": "T",
+                "quality_score": -5.730716,
+                "extent": [
+                  21,
+                  22
+                ]
+              },
+              {
+                "phone": "S",
+                "quality_score": 0.49159699999999984,
+                "extent": [
+                  22,
+                  23
+                ]
+              }
+            ]
+          }
+        ],
+        "ielts_score": {
+          "pronunciation": 5.0,
+          "fluency": 6.0,
+          "grammar": 0.0,
+          "coherence": 0.0,
+          "vocab": 0.0,
+          "overall": 5.5
+        }
+      }
+    }
+  ]
+}

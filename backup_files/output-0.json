@@ -1,0 +1,6080 @@
+{
+	"status": "success",
+	"quota_remaining": -1,
+	"speech_score": {
+		"transcript": "Good morning everyone. My name is Riya Saini, I am from grade 8 Tharbat of Central Convent School. Today I am going to tell about my strength and weakness. My strength are my parents because they help me in every situation and also they always stand by me. And my weakness is dead. I'm not able to solve big math problems well. Thank you.",
+		"word_score_list": [
+			{
+				"word": "Good",
+				"quality_score": 92,
+				"phone_score_list": [
+					{
+						"phone": "g",
+						"stress_level": null,
+						"extent": [
+							10,
+							16
+						],
+						"quality_score": 89,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "g"
+					},
+					{
+						"phone": "uh",
+						"stress_level": 1,
+						"extent": [
+							16,
+							22
+						],
+						"quality_score": 93,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							3
+						],
+						"sound_most_like": "uh"
+					},
+					{
+						"phone": "d",
+						"stress_level": null,
+						"extent": [
+							22,
+							28
+						],
+						"quality_score": 95.5,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "d"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "good",
+						"quality_score": 92,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							10,
+							28
+						]
+					}
+				]
+			},
+			{
+				"word": "morning",
+				"quality_score": 82,
+				"phone_score_list": [
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							28,
+							40
+						],
+						"quality_score": 98,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "ao",
+						"stress_level": 1,
+						"extent": [
+							40,
+							46
+						],
+						"quality_score": 61.5,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "er",
+						"child_phones": [
+							{
+								"extent": [
+									40,
+									43
+								],
+								"quality_score": 88,
+								"sound_most_like": "ay"
+							},
+							{
+								"extent": [
+									43,
+									46
+								],
+								"quality_score": 35,
+								"sound_most_like": "er"
+							}
+						]
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							46,
+							47
+						],
+						"quality_score": 35,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							47,
+							52
+						],
+						"quality_score": 100,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "ih",
+						"stress_level": 0,
+						"extent": [
+							52,
+							58
+						],
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "ih"
+					},
+					{
+						"phone": "ng",
+						"stress_level": null,
+						"extent": [
+							58,
+							67
+						],
+						"quality_score": 97,
+						"word_extent": [
+							5,
+							7
+						],
+						"sound_most_like": "ng"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 4,
+						"stress_level": 1,
+						"letters": "morn",
+						"quality_score": 74,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							28,
+							52
+						]
+					},
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "ing",
+						"quality_score": 98,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							52,
+							67
+						]
+					}
+				]
+			},
+			{
+				"word": "everyone",
+				"quality_score": 86,
+				"phone_score_list": [
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							67,
+							76
+						],
+						"quality_score": 98.66666666666667,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "eh"
+					},
+					{
+						"phone": "v",
+						"stress_level": null,
+						"extent": [
+							76,
+							82
+						],
+						"quality_score": 100,
+						"word_extent": [
+							1,
+							3
+						],
+						"sound_most_like": "v"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							82,
+							88
+						],
+						"quality_score": 100,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "r"
+					},
+					{
+						"phone": "iy",
+						"stress_level": 0,
+						"extent": [
+							88,
+							97
+						],
+						"quality_score": 76.22222222222223,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "ah",
+						"child_phones": [
+							{
+								"extent": [
+									88,
+									94
+								],
+								"quality_score": 93.5,
+								"sound_most_like": "y"
+							},
+							{
+								"extent": [
+									94,
+									97
+								],
+								"quality_score": 41.666666666666664,
+								"sound_most_like": "ah"
+							}
+						]
+					},
+					{
+						"phone": "w",
+						"stress_level": null,
+						"extent": [
+							97,
+							103
+						],
+						"quality_score": 35,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "l"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 2,
+						"extent": [
+							103,
+							109
+						],
+						"quality_score": 96,
+						"stress_score": 92,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							109,
+							115
+						],
+						"quality_score": 96.5,
+						"word_extent": [
+							6,
+							8
+						],
+						"sound_most_like": "n"
+					}
+				],
+				"ending_punctuation": ".",
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "eve",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							67,
+							82
+						]
+					},
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "ry",
+						"quality_score": 88,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							82,
+							97
+						]
+					},
+					{
+						"phone_count": 3,
+						"stress_level": 2,
+						"letters": "one",
+						"quality_score": 76,
+						"stress_score": 92,
+						"predicted_stress_level": 0,
+						"extent": [
+							97,
+							115
+						]
+					}
+				]
+			},
+			{
+				"word": "My",
+				"quality_score": 99,
+				"phone_score_list": [
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							145,
+							157
+						],
+						"quality_score": 98.5,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "ay",
+						"stress_level": 1,
+						"extent": [
+							157,
+							166
+						],
+						"quality_score": 99.33333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ay"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "my",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							145,
+							166
+						]
+					}
+				]
+			},
+			{
+				"word": "name",
+				"quality_score": 88,
+				"phone_score_list": [
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							166,
+							175
+						],
+						"quality_score": 98.33333333333333,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "ey",
+						"stress_level": 1,
+						"extent": [
+							175,
+							181
+						],
+						"quality_score": 65.5,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "iy"
+					},
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							181,
+							187
+						],
+						"quality_score": 100,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "m"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "name",
+						"quality_score": 88,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							166,
+							187
+						]
+					}
+				]
+			},
+			{
+				"word": "is",
+				"quality_score": 100,
+				"phone_score_list": [
+					{
+						"phone": "ih",
+						"stress_level": 1,
+						"extent": [
+							187,
+							196
+						],
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ih"
+					},
+					{
+						"phone": "z",
+						"stress_level": null,
+						"extent": [
+							196,
+							208
+						],
+						"quality_score": 99.75,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "z"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "is",
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							187,
+							208
+						]
+					}
+				]
+			},
+			{
+				"word": "Riya",
+				"quality_score": 97,
+				"phone_score_list": [
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							208,
+							211
+						],
+						"quality_score": 95,
+						"sound_most_like": "r"
+					},
+					{
+						"phone": "iy",
+						"stress_level": 1,
+						"extent": [
+							211,
+							220
+						],
+						"quality_score": 98.66666666666667,
+						"stress_score": 88,
+						"predicted_stress_level": 0,
+						"sound_most_like": "iy"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							220,
+							229
+						],
+						"quality_score": 98.33333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"sound_most_like": "ah"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "riy",
+						"quality_score": 97,
+						"stress_score": 88,
+						"predicted_stress_level": 0,
+						"extent": [
+							208,
+							220
+						]
+					},
+					{
+						"phone_count": 1,
+						"stress_level": 0,
+						"letters": "a",
+						"quality_score": 98,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							220,
+							229
+						]
+					}
+				]
+			},
+			{
+				"word": "Saini",
+				"quality_score": 91,
+				"phone_score_list": [
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							229,
+							241
+						],
+						"quality_score": 99.25,
+						"sound_most_like": "s"
+					},
+					{
+						"phone": "ey",
+						"stress_level": 1,
+						"extent": [
+							241,
+							247
+						],
+						"quality_score": 89,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"sound_most_like": "ey"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							247,
+							256
+						],
+						"quality_score": 76.66666666666667,
+						"sound_most_like": "b",
+						"child_phones": [
+							{
+								"extent": [
+									247,
+									253
+								],
+								"quality_score": 97.5,
+								"sound_most_like": "n"
+							},
+							{
+								"extent": [
+									253,
+									256
+								],
+								"quality_score": 35,
+								"sound_most_like": "b"
+							}
+						]
+					},
+					{
+						"phone": "iy",
+						"stress_level": 0,
+						"extent": [
+							256,
+							274
+						],
+						"quality_score": 98.33333333333333,
+						"stress_score": 94,
+						"predicted_stress_level": 1,
+						"sound_most_like": "iy"
+					}
+				],
+				"ending_punctuation": ",",
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "sai",
+						"quality_score": 94,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							229,
+							247
+						]
+					},
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "ni",
+						"quality_score": 88,
+						"stress_score": 94,
+						"predicted_stress_level": 1,
+						"extent": [
+							247,
+							274
+						]
+					}
+				]
+			},
+			{
+				"word": "I",
+				"quality_score": 99,
+				"phone_score_list": [
+					{
+						"phone": "ay",
+						"stress_level": 1,
+						"extent": [
+							358,
+							373
+						],
+						"quality_score": 98.6,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ay"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 1,
+						"stress_level": 1,
+						"letters": "i",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							358,
+							373
+						]
+					}
+				]
+			},
+			{
+				"word": "am",
+				"quality_score": 45,
+				"phone_score_list": [
+					{
+						"phone": "ae",
+						"stress_level": 1,
+						"extent": [
+							373,
+							382
+						],
+						"quality_score": 55.1111111111111,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							382,
+							383
+						],
+						"quality_score": 35,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "v"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "am",
+						"quality_score": 45,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							373,
+							383
+						]
+					}
+				]
+			},
+			{
+				"word": "from",
+				"quality_score": 96,
+				"phone_score_list": [
+					{
+						"phone": "f",
+						"stress_level": null,
+						"extent": [
+							383,
+							397
+						],
+						"quality_score": 98.14285714285714,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "f"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							397,
+							403
+						],
+						"quality_score": 100,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "r"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 1,
+						"extent": [
+							403,
+							409
+						],
+						"quality_score": 84.5,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							409,
+							415
+						],
+						"quality_score": 99.5,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "m"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 4,
+						"stress_level": 1,
+						"letters": "from",
+						"quality_score": 96,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							383,
+							415
+						]
+					}
+				]
+			},
+			{
+				"word": "grade",
+				"quality_score": 87,
+				"phone_score_list": [
+					{
+						"phone": "g",
+						"stress_level": null,
+						"extent": [
+							415,
+							424
+						],
+						"quality_score": 98.66666666666667,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "g"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							424,
+							430
+						],
+						"quality_score": 100,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "r"
+					},
+					{
+						"phone": "ey",
+						"stress_level": 1,
+						"extent": [
+							430,
+							439
+						],
+						"quality_score": 88.33333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "ey"
+					},
+					{
+						"phone": "d",
+						"stress_level": null,
+						"extent": [
+							439,
+							445
+						],
+						"quality_score": 61.5,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "k"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 4,
+						"stress_level": 1,
+						"letters": "grade",
+						"quality_score": 87,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							415,
+							445
+						]
+					}
+				]
+			},
+			{
+				"word": "eight",
+				"quality_score": 97,
+				"phone_score_list": [
+					{
+						"phone": "ey",
+						"stress_level": 1,
+						"extent": [
+							451,
+							466
+						],
+						"quality_score": 94.8,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							0,
+							2
+						],
+						"sound_most_like": "ey"
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							466,
+							472
+						],
+						"quality_score": 100,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "t"
+					}
+				],
+				"source_word": "8",
+				"source_word_continue": false,
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "eight",
+						"quality_score": 97,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							451,
+							472
+						]
+					}
+				]
+			},
+			{
+				"word": "Tharbat",
+				"quality_score": 92,
+				"phone_score_list": [
+					{
+						"phone": "th",
+						"stress_level": null,
+						"extent": [
+							472,
+							481
+						],
+						"quality_score": 94.66666666666667,
+						"sound_most_like": "th"
+					},
+					{
+						"phone": "aa",
+						"stress_level": 1,
+						"extent": [
+							481,
+							490
+						],
+						"quality_score": 93,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"sound_most_like": "aa"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							490,
+							502
+						],
+						"quality_score": 72.75,
+						"sound_most_like": "ah",
+						"child_phones": [
+							{
+								"extent": [
+									490,
+									496
+								],
+								"quality_score": 98,
+								"sound_most_like": "r"
+							},
+							{
+								"extent": [
+									496,
+									499
+								],
+								"quality_score": 0,
+								"sound_most_like": "ah"
+							},
+							{
+								"extent": [
+									499,
+									502
+								],
+								"quality_score": 95,
+								"sound_most_like": "er"
+							}
+						]
+					},
+					{
+						"phone": "b",
+						"stress_level": null,
+						"extent": [
+							502,
+							511
+						],
+						"quality_score": 100,
+						"sound_most_like": "b"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							511,
+							520
+						],
+						"quality_score": 93,
+						"stress_score": 0,
+						"predicted_stress_level": 1,
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							520,
+							529
+						],
+						"quality_score": 99.33333333333333,
+						"sound_most_like": "t"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "thar",
+						"quality_score": 87,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							472,
+							502
+						]
+					},
+					{
+						"phone_count": 3,
+						"stress_level": 0,
+						"letters": "bat",
+						"quality_score": 97,
+						"stress_score": 0,
+						"predicted_stress_level": 1,
+						"extent": [
+							502,
+							529
+						]
+					}
+				]
+			},
+			{
+				"word": "of",
+				"quality_score": 83,
+				"phone_score_list": [
+					{
+						"phone": "ah",
+						"stress_level": 1,
+						"extent": [
+							538,
+							550
+						],
+						"quality_score": 97.5,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "v",
+						"stress_level": null,
+						"extent": [
+							550,
+							577
+						],
+						"quality_score": 68.07407407407408,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "f",
+						"child_phones": [
+							{
+								"extent": [
+									550,
+									559
+								],
+								"quality_score": 98.66666666666667,
+								"sound_most_like": "v"
+							},
+							{
+								"extent": [
+									559,
+									562
+								],
+								"quality_score": 1.6666666666666718,
+								"sound_most_like": "sil"
+							},
+							{
+								"extent": [
+									562,
+									565
+								],
+								"quality_score": 100,
+								"sound_most_like": "v"
+							},
+							{
+								"extent": [
+									565,
+									568
+								],
+								"quality_score": 90,
+								"sound_most_like": "s"
+							},
+							{
+								"extent": [
+									568,
+									577
+								],
+								"quality_score": 41.66666666666667,
+								"sound_most_like": "f"
+							}
+						]
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "of",
+						"quality_score": 83,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							538,
+							577
+						]
+					}
+				]
+			},
+			{
+				"word": "Central",
+				"quality_score": 60,
+				"phone_score_list": [
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							622,
+							637
+						],
+						"quality_score": 99,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "s"
+					},
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							637,
+							643
+						],
+						"quality_score": 97.5,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "eh"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							643,
+							652
+						],
+						"quality_score": 99.66666666666667,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							652,
+							658
+						],
+						"quality_score": 91,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "t"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							658,
+							659
+						],
+						"quality_score": 0,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "er"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							659,
+							663
+						],
+						"quality_score": 35,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "er"
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							663,
+							663
+						],
+						"quality_score": 0,
+						"word_extent": [
+							6,
+							7
+						],
+						"sound_most_like": null
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "cen",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							622,
+							652
+						]
+					},
+					{
+						"phone_count": 4,
+						"stress_level": 0,
+						"letters": "tral",
+						"quality_score": 32,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							652,
+							663
+						]
+					}
+				]
+			},
+			{
+				"word": "Convent",
+				"quality_score": 73,
+				"phone_score_list": [
+					{
+						"phone": "k",
+						"stress_level": null,
+						"extent": [
+							663,
+							673
+						],
+						"quality_score": 60.333333333333336,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "er"
+					},
+					{
+						"phone": "aa",
+						"stress_level": 1,
+						"extent": [
+							673,
+							679
+						],
+						"quality_score": 99.5,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "aa"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							679,
+							691
+						],
+						"quality_score": 95.25,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "v",
+						"stress_level": null,
+						"extent": [
+							691,
+							692
+						],
+						"quality_score": 35,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "r"
+					},
+					{
+						"phone": "eh",
+						"stress_level": 2,
+						"extent": [
+							692,
+							697
+						],
+						"quality_score": 92.2,
+						"stress_score": 50,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "eh"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							697,
+							700
+						],
+						"quality_score": 84,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							700,
+							701
+						],
+						"quality_score": 41.666666666666664,
+						"word_extent": [
+							6,
+							7
+						],
+						"sound_most_like": "s"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "con",
+						"quality_score": 85,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							663,
+							691
+						]
+					},
+					{
+						"phone_count": 4,
+						"stress_level": 2,
+						"letters": "vent",
+						"quality_score": 63,
+						"stress_score": 50,
+						"predicted_stress_level": 0,
+						"extent": [
+							691,
+							701
+						]
+					}
+				]
+			},
+			{
+				"word": "School",
+				"quality_score": 73,
+				"phone_score_list": [
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							701,
+							712
+						],
+						"quality_score": 97.9090909090909,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "s"
+					},
+					{
+						"phone": "k",
+						"stress_level": null,
+						"extent": [
+							712,
+							721
+						],
+						"quality_score": 99.66666666666667,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "k"
+					},
+					{
+						"phone": "uw",
+						"stress_level": 1,
+						"extent": [
+							721,
+							736
+						],
+						"quality_score": 95.2,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							3,
+							5
+						],
+						"sound_most_like": "uw"
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							736,
+							736
+						],
+						"quality_score": 0,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": null
+					}
+				],
+				"ending_punctuation": ".",
+				"syllable_score_list": [
+					{
+						"phone_count": 4,
+						"stress_level": 1,
+						"letters": "school",
+						"quality_score": 73,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							701,
+							736
+						]
+					}
+				]
+			},
+			{
+				"word": "Today",
+				"quality_score": 77,
+				"phone_score_list": [
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							769,
+							775
+						],
+						"quality_score": 88,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "t"
+					},
+					{
+						"phone": "uw",
+						"stress_level": 0,
+						"extent": [
+							775,
+							784
+						],
+						"quality_score": 61.333333333333336,
+						"stress_score": 0,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "l",
+						"child_phones": [
+							{
+								"extent": [
+									775,
+									778
+								],
+								"quality_score": 96,
+								"sound_most_like": "ow"
+							},
+							{
+								"extent": [
+									778,
+									784
+								],
+								"quality_score": 43.99999999999999,
+								"sound_most_like": "l"
+							}
+						]
+					},
+					{
+						"phone": "d",
+						"stress_level": null,
+						"extent": [
+							784,
+							790
+						],
+						"quality_score": 95,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "d"
+					},
+					{
+						"phone": "ey",
+						"stress_level": 1,
+						"extent": [
+							790,
+							796
+						],
+						"quality_score": 65,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							3,
+							5
+						],
+						"sound_most_like": "ih"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "to",
+						"quality_score": 75,
+						"stress_score": 0,
+						"predicted_stress_level": 1,
+						"extent": [
+							769,
+							784
+						]
+					},
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "day",
+						"quality_score": 80,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							784,
+							796
+						]
+					}
+				]
+			},
+			{
+				"word": "I",
+				"quality_score": 82,
+				"phone_score_list": [
+					{
+						"phone": "ay",
+						"stress_level": 1,
+						"extent": [
+							796,
+							810
+						],
+						"quality_score": 82.5,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ay",
+						"child_phones": [
+							{
+								"extent": [
+									796,
+									808
+								],
+								"quality_score": 96.25,
+								"sound_most_like": "ay"
+							},
+							{
+								"extent": [
+									808,
+									810
+								],
+								"quality_score": 0,
+								"sound_most_like": "m"
+							}
+						]
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 1,
+						"stress_level": 1,
+						"letters": "i",
+						"quality_score": 82,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							796,
+							810
+						]
+					}
+				]
+			},
+			{
+				"word": "am",
+				"quality_score": 50,
+				"phone_score_list": [
+					{
+						"phone": "ae",
+						"stress_level": 1,
+						"extent": [
+							810,
+							811
+						],
+						"quality_score": 0,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							811,
+							817
+						],
+						"quality_score": 100,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "m"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "am",
+						"quality_score": 50,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							810,
+							817
+						]
+					}
+				]
+			},
+			{
+				"word": "going",
+				"quality_score": 83,
+				"phone_score_list": [
+					{
+						"phone": "g",
+						"stress_level": null,
+						"extent": [
+							817,
+							823
+						],
+						"quality_score": 95,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "g"
+					},
+					{
+						"phone": "ow",
+						"stress_level": 1,
+						"extent": [
+							823,
+							829
+						],
+						"quality_score": 97.5,
+						"stress_score": 86,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ow"
+					},
+					{
+						"phone": "ih",
+						"stress_level": 0,
+						"extent": [
+							829,
+							835
+						],
+						"quality_score": 99.5,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "ih"
+					},
+					{
+						"phone": "ng",
+						"stress_level": null,
+						"extent": [
+							835,
+							838
+						],
+						"quality_score": 41.666666666666664,
+						"word_extent": [
+							3,
+							5
+						],
+						"sound_most_like": "n"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "go",
+						"quality_score": 96,
+						"stress_score": 86,
+						"predicted_stress_level": 0,
+						"extent": [
+							817,
+							829
+						]
+					},
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "ing",
+						"quality_score": 71,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							829,
+							838
+						]
+					}
+				]
+			},
+			{
+				"word": "to",
+				"quality_score": 99,
+				"phone_score_list": [
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							838,
+							847
+						],
+						"quality_score": 99.33333333333333,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "t"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							847,
+							853
+						],
+						"quality_score": 99.5,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ah"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "to",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							838,
+							853
+						]
+					}
+				]
+			},
+			{
+				"word": "tell",
+				"quality_score": 97,
+				"phone_score_list": [
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							853,
+							862
+						],
+						"quality_score": 93.33333333333333,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "t"
+					},
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							862,
+							871
+						],
+						"quality_score": 97.33333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "eh"
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							871,
+							874
+						],
+						"quality_score": 99,
+						"word_extent": [
+							2,
+							4
+						],
+						"sound_most_like": "l"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "tell",
+						"quality_score": 97,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							853,
+							874
+						]
+					}
+				]
+			},
+			{
+				"word": "about",
+				"quality_score": 70,
+				"phone_score_list": [
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							874,
+							880
+						],
+						"quality_score": 97.5,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "b",
+						"stress_level": null,
+						"extent": [
+							880,
+							889
+						],
+						"quality_score": 98.66666666666667,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "b"
+					},
+					{
+						"phone": "aw",
+						"stress_level": 1,
+						"extent": [
+							889,
+							907
+						],
+						"quality_score": 7.458333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							2,
+							4
+						],
+						"sound_most_like": "l",
+						"child_phones": [
+							{
+								"extent": [
+									889,
+									892
+								],
+								"quality_score": 21,
+								"sound_most_like": "ow"
+							},
+							{
+								"extent": [
+									892,
+									898
+								],
+								"quality_score": 3.125,
+								"sound_most_like": "l"
+							},
+							{
+								"extent": [
+									898,
+									901
+								],
+								"quality_score": 0,
+								"sound_most_like": "w"
+							},
+							{
+								"extent": [
+									901,
+									904
+								],
+								"quality_score": 8.75,
+								"sound_most_like": "ah"
+							},
+							{
+								"extent": [
+									904,
+									907
+								],
+								"quality_score": 8.75,
+								"sound_most_like": "ih"
+							}
+						]
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							907,
+							916
+						],
+						"quality_score": 77.22222222222223,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "s",
+						"child_phones": [
+							{
+								"extent": [
+									907,
+									913
+								],
+								"quality_score": 95,
+								"sound_most_like": "t"
+							},
+							{
+								"extent": [
+									913,
+									916
+								],
+								"quality_score": 41.666666666666664,
+								"sound_most_like": "s"
+							}
+						]
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 1,
+						"stress_level": 0,
+						"letters": "a",
+						"quality_score": 98,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							874,
+							880
+						]
+					},
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "bout",
+						"quality_score": 61,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							880,
+							916
+						]
+					}
+				]
+			},
+			{
+				"word": "my",
+				"quality_score": 84,
+				"phone_score_list": [
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							917,
+							928
+						],
+						"quality_score": 98.54545454545455,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "ay",
+						"stress_level": 1,
+						"extent": [
+							928,
+							955
+						],
+						"quality_score": 68.66666666666667,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ao",
+						"child_phones": [
+							{
+								"extent": [
+									928,
+									940
+								],
+								"quality_score": 99.75,
+								"sound_most_like": "ay"
+							},
+							{
+								"extent": [
+									940,
+									946
+								],
+								"quality_score": 35,
+								"sound_most_like": "ao"
+							},
+							{
+								"extent": [
+									946,
+									949
+								],
+								"quality_score": 78.99999999999999,
+								"sound_most_like": "iy"
+							},
+							{
+								"extent": [
+									949,
+									955
+								],
+								"quality_score": 35,
+								"sound_most_like": "ah"
+							}
+						]
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "my",
+						"quality_score": 84,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							917,
+							955
+						]
+					}
+				]
+			},
+			{
+				"word": "strength",
+				"quality_score": 86,
+				"phone_score_list": [
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							956,
+							967
+						],
+						"quality_score": 97.81818181818181,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "s"
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							967,
+							973
+						],
+						"quality_score": 98,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "t"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							973,
+							982
+						],
+						"quality_score": 93.33333333333333,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "r"
+					},
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							982,
+							983
+						],
+						"quality_score": 41.666666666666664,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "ih"
+					},
+					{
+						"phone": "ng",
+						"stress_level": null,
+						"extent": [
+							983,
+							988
+						],
+						"quality_score": 88.8,
+						"word_extent": [
+							4,
+							6
+						],
+						"sound_most_like": "ng"
+					},
+					{
+						"phone": "th",
+						"stress_level": null,
+						"extent": [
+							988,
+							994
+						],
+						"quality_score": 96.5,
+						"word_extent": [
+							6,
+							8
+						],
+						"sound_most_like": "th"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 6,
+						"stress_level": 1,
+						"letters": "strength",
+						"quality_score": 86,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							956,
+							994
+						]
+					}
+				]
+			},
+			{
+				"word": "and",
+				"quality_score": 93,
+				"phone_score_list": [
+					{
+						"phone": "ae",
+						"stress_level": 1,
+						"extent": [
+							994,
+							1000
+						],
+						"quality_score": 98,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ae"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							1000,
+							1003
+						],
+						"quality_score": 93,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "d",
+						"stress_level": null,
+						"extent": [
+							1003,
+							1009
+						],
+						"quality_score": 88,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "d"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "and",
+						"quality_score": 93,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							994,
+							1009
+						]
+					}
+				]
+			},
+			{
+				"word": "weakness",
+				"quality_score": 91,
+				"phone_score_list": [
+					{
+						"phone": "w",
+						"stress_level": null,
+						"extent": [
+							1015,
+							1024
+						],
+						"quality_score": 74.33333333333333,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "iy",
+						"stress_level": 1,
+						"extent": [
+							1024,
+							1033
+						],
+						"quality_score": 93.33333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							3
+						],
+						"sound_most_like": "iy"
+					},
+					{
+						"phone": "k",
+						"stress_level": null,
+						"extent": [
+							1033,
+							1039
+						],
+						"quality_score": 89,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "k"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							1039,
+							1045
+						],
+						"quality_score": 100,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							1045,
+							1054
+						],
+						"quality_score": 94,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							1054,
+							1069
+						],
+						"quality_score": 95.8,
+						"word_extent": [
+							6,
+							8
+						],
+						"sound_most_like": "s"
+					}
+				],
+				"ending_punctuation": ".",
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "weak",
+						"quality_score": 86,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1015,
+							1039
+						]
+					},
+					{
+						"phone_count": 3,
+						"stress_level": 0,
+						"letters": "ness",
+						"quality_score": 97,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1039,
+							1069
+						]
+					}
+				]
+			},
+			{
+				"word": "My",
+				"quality_score": 98,
+				"phone_score_list": [
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							1099,
+							1111
+						],
+						"quality_score": 99.75,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "ay",
+						"stress_level": 1,
+						"extent": [
+							1111,
+							1126
+						],
+						"quality_score": 95.8,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ay"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "my",
+						"quality_score": 98,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1099,
+							1126
+						]
+					}
+				]
+			},
+			{
+				"word": "strength",
+				"quality_score": 89,
+				"phone_score_list": [
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							1126,
+							1135
+						],
+						"quality_score": 98,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "s"
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							1135,
+							1138
+						],
+						"quality_score": 100,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "t"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							1138,
+							1147
+						],
+						"quality_score": 99.66666666666667,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "r"
+					},
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							1147,
+							1153
+						],
+						"quality_score": 95,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "eh"
+					},
+					{
+						"phone": "ng",
+						"stress_level": null,
+						"extent": [
+							1153,
+							1156
+						],
+						"quality_score": 41.666666666666664,
+						"word_extent": [
+							4,
+							6
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "th",
+						"stress_level": null,
+						"extent": [
+							1156,
+							1162
+						],
+						"quality_score": 97,
+						"word_extent": [
+							6,
+							8
+						],
+						"sound_most_like": "th"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 6,
+						"stress_level": 1,
+						"letters": "strength",
+						"quality_score": 89,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1126,
+							1162
+						]
+					}
+				]
+			},
+			{
+				"word": "are",
+				"quality_score": 94,
+				"phone_score_list": [
+					{
+						"phone": "aa",
+						"stress_level": 1,
+						"extent": [
+							1162,
+							1171
+						],
+						"quality_score": 91.33333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "aa"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							1171,
+							1174
+						],
+						"quality_score": 96,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "r"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "are",
+						"quality_score": 94,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1162,
+							1174
+						]
+					}
+				]
+			},
+			{
+				"word": "my",
+				"quality_score": 95,
+				"phone_score_list": [
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							1174,
+							1183
+						],
+						"quality_score": 99.66666666666667,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "ay",
+						"stress_level": 1,
+						"extent": [
+							1183,
+							1192
+						],
+						"quality_score": 90.33333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ay"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "my",
+						"quality_score": 95,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1174,
+							1192
+						]
+					}
+				]
+			},
+			{
+				"word": "parents",
+				"quality_score": 90,
+				"phone_score_list": [
+					{
+						"phone": "p",
+						"stress_level": null,
+						"extent": [
+							1192,
+							1204
+						],
+						"quality_score": 98,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "p"
+					},
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							1204,
+							1216
+						],
+						"quality_score": 69.41666666666667,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "iy"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							1216,
+							1228
+						],
+						"quality_score": 73,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "ih",
+						"child_phones": [
+							{
+								"extent": [
+									1216,
+									1222
+								],
+								"quality_score": 98,
+								"sound_most_like": "r"
+							},
+							{
+								"extent": [
+									1222,
+									1228
+								],
+								"quality_score": 48,
+								"sound_most_like": "ih"
+							}
+						]
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							1228,
+							1231
+						],
+						"quality_score": 94,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							1231,
+							1237
+						],
+						"quality_score": 99.5,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							1237,
+							1238
+						],
+						"quality_score": 96,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "t"
+					},
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							1238,
+							1261
+						],
+						"quality_score": 99.34782608695652,
+						"word_extent": [
+							6,
+							7
+						],
+						"sound_most_like": "s"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "pa",
+						"quality_score": 84,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1192,
+							1216
+						]
+					},
+					{
+						"phone_count": 5,
+						"stress_level": 0,
+						"letters": "rents",
+						"quality_score": 92,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1216,
+							1261
+						]
+					}
+				]
+			},
+			{
+				"word": "because",
+				"quality_score": 98,
+				"phone_score_list": [
+					{
+						"phone": "b",
+						"stress_level": null,
+						"extent": [
+							1300,
+							1306
+						],
+						"quality_score": 100,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "b"
+					},
+					{
+						"phone": "ih",
+						"stress_level": 0,
+						"extent": [
+							1306,
+							1315
+						],
+						"quality_score": 94.33333333333334,
+						"stress_score": 96,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ih"
+					},
+					{
+						"phone": "k",
+						"stress_level": null,
+						"extent": [
+							1315,
+							1324
+						],
+						"quality_score": 98.66666666666667,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "k"
+					},
+					{
+						"phone": "ao",
+						"stress_level": 1,
+						"extent": [
+							1324,
+							1336
+						],
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							3,
+							5
+						],
+						"sound_most_like": "ao"
+					},
+					{
+						"phone": "z",
+						"stress_level": null,
+						"extent": [
+							1336,
+							1354
+						],
+						"quality_score": 99.33333333333333,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "z"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "be",
+						"quality_score": 97,
+						"stress_score": 96,
+						"predicted_stress_level": 1,
+						"extent": [
+							1300,
+							1315
+						]
+					},
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "cause",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1315,
+							1354
+						]
+					}
+				]
+			},
+			{
+				"word": "they",
+				"quality_score": 38,
+				"phone_score_list": [
+					{
+						"phone": "dh",
+						"stress_level": null,
+						"extent": [
+							1354,
+							1354
+						],
+						"quality_score": 0,
+						"word_extent": [
+							0,
+							2
+						],
+						"sound_most_like": null
+					},
+					{
+						"phone": "ey",
+						"stress_level": 1,
+						"extent": [
+							1354,
+							1374
+						],
+						"quality_score": 76.56666666666666,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							2,
+							4
+						],
+						"sound_most_like": "er",
+						"child_phones": [
+							{
+								"extent": [
+									1354,
+									1369
+								],
+								"quality_score": 89,
+								"sound_most_like": "ae"
+							},
+							{
+								"extent": [
+									1369,
+									1372
+								],
+								"quality_score": 35,
+								"sound_most_like": "er"
+							},
+							{
+								"extent": [
+									1372,
+									1374
+								],
+								"quality_score": 45.666666666666664,
+								"sound_most_like": "ay"
+							}
+						]
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "they",
+						"quality_score": 38,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1354,
+							1374
+						]
+					}
+				]
+			},
+			{
+				"word": "help",
+				"quality_score": 9,
+				"phone_score_list": [
+					{
+						"phone": "hh",
+						"stress_level": null,
+						"extent": [
+							1374,
+							1374
+						],
+						"quality_score": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": null
+					},
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							1374,
+							1378
+						],
+						"quality_score": 35,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ay"
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							1378,
+							1378
+						],
+						"quality_score": 0,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": null
+					},
+					{
+						"phone": "p",
+						"stress_level": null,
+						"extent": [
+							1378,
+							1378
+						],
+						"quality_score": 0,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": null
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 4,
+						"stress_level": 1,
+						"letters": "help",
+						"quality_score": 9,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1374,
+							1378
+						]
+					}
+				]
+			},
+			{
+				"word": "me",
+				"quality_score": 76,
+				"phone_score_list": [
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							1381,
+							1393
+						],
+						"quality_score": 82.75,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "iy",
+						"stress_level": 1,
+						"extent": [
+							1393,
+							1406
+						],
+						"quality_score": 68.76923076923077,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "n",
+						"child_phones": [
+							{
+								"extent": [
+									1393,
+									1402
+								],
+								"quality_score": 99.33333333333333,
+								"sound_most_like": "iy"
+							},
+							{
+								"extent": [
+									1402,
+									1406
+								],
+								"quality_score": 0,
+								"sound_most_like": "n"
+							}
+						]
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "me",
+						"quality_score": 76,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1381,
+							1406
+						]
+					}
+				]
+			},
+			{
+				"word": "in",
+				"quality_score": 50,
+				"phone_score_list": [
+					{
+						"phone": "ih",
+						"stress_level": 0,
+						"extent": [
+							1406,
+							1407
+						],
+						"quality_score": 0,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							1407,
+							1414
+						],
+						"quality_score": 99.85714285714286,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "n"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "in",
+						"quality_score": 50,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1406,
+							1414
+						]
+					}
+				]
+			},
+			{
+				"word": "every",
+				"quality_score": 88,
+				"phone_score_list": [
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							1414,
+							1426
+						],
+						"quality_score": 82.75,
+						"stress_score": 98,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "eh",
+						"child_phones": [
+							{
+								"extent": [
+									1414,
+									1423
+								],
+								"quality_score": 98.66666666666667,
+								"sound_most_like": "eh"
+							},
+							{
+								"extent": [
+									1423,
+									1426
+								],
+								"quality_score": 35,
+								"sound_most_like": "aa"
+							}
+						]
+					},
+					{
+						"phone": "v",
+						"stress_level": null,
+						"extent": [
+							1426,
+							1432
+						],
+						"quality_score": 99.5,
+						"word_extent": [
+							1,
+							3
+						],
+						"sound_most_like": "v"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							1432,
+							1438
+						],
+						"quality_score": 99.5,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "r"
+					},
+					{
+						"phone": "iy",
+						"stress_level": 0,
+						"extent": [
+							1438,
+							1444
+						],
+						"quality_score": 68.41666666666667,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "ih"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "eve",
+						"quality_score": 91,
+						"stress_score": 98,
+						"predicted_stress_level": 0,
+						"extent": [
+							1414,
+							1432
+						]
+					},
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "ry",
+						"quality_score": 84,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1432,
+							1444
+						]
+					}
+				]
+			},
+			{
+				"word": "situation",
+				"quality_score": 99,
+				"phone_score_list": [
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							1444,
+							1453
+						],
+						"quality_score": 95.33333333333333,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "s"
+					},
+					{
+						"phone": "ih",
+						"stress_level": 2,
+						"extent": [
+							1453,
+							1459
+						],
+						"quality_score": 98,
+						"stress_score": 50,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ih"
+					},
+					{
+						"phone": "ch",
+						"stress_level": null,
+						"extent": [
+							1459,
+							1474
+						],
+						"quality_score": 96.8,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "ch"
+					},
+					{
+						"phone": "uw",
+						"stress_level": 0,
+						"extent": [
+							1474,
+							1483
+						],
+						"quality_score": 99.66666666666667,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "uw"
+					},
+					{
+						"phone": "ey",
+						"stress_level": 1,
+						"extent": [
+							1483,
+							1495
+						],
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "ey"
+					},
+					{
+						"phone": "sh",
+						"stress_level": null,
+						"extent": [
+							1495,
+							1507
+						],
+						"quality_score": 99.5,
+						"word_extent": [
+							5,
+							7
+						],
+						"sound_most_like": "sh"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							1507,
+							1513
+						],
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							7,
+							8
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							1513,
+							1516
+						],
+						"quality_score": 100,
+						"word_extent": [
+							8,
+							9
+						],
+						"sound_most_like": "n"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 2,
+						"letters": "sit",
+						"quality_score": 97,
+						"stress_score": 50,
+						"predicted_stress_level": 0,
+						"extent": [
+							1444,
+							1474
+						]
+					},
+					{
+						"phone_count": 1,
+						"stress_level": 0,
+						"letters": "u",
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1474,
+							1483
+						]
+					},
+					{
+						"phone_count": 1,
+						"stress_level": 1,
+						"letters": "a",
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1483,
+							1495
+						]
+					},
+					{
+						"phone_count": 3,
+						"stress_level": 0,
+						"letters": "tion",
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1495,
+							1516
+						]
+					}
+				]
+			},
+			{
+				"word": "and",
+				"quality_score": 100,
+				"phone_score_list": [
+					{
+						"phone": "ae",
+						"stress_level": 1,
+						"extent": [
+							1543,
+							1552
+						],
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ae"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							1552,
+							1561
+						],
+						"quality_score": 99,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "d",
+						"stress_level": null,
+						"extent": [
+							1561,
+							1564
+						],
+						"quality_score": 100,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "d"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "and",
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1543,
+							1564
+						]
+					}
+				]
+			},
+			{
+				"word": "also",
+				"quality_score": 97,
+				"phone_score_list": [
+					{
+						"phone": "ao",
+						"stress_level": 1,
+						"extent": [
+							1565,
+							1585
+						],
+						"quality_score": 99.6,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ao"
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							1585,
+							1597
+						],
+						"quality_score": 99.25,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "l"
+					},
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							1597,
+							1612
+						],
+						"quality_score": 95.4,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "s"
+					},
+					{
+						"phone": "ow",
+						"stress_level": 0,
+						"extent": [
+							1612,
+							1627
+						],
+						"quality_score": 93.8,
+						"stress_score": 96,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "ow"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "al",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1565,
+							1597
+						]
+					},
+					{
+						"phone_count": 2,
+						"stress_level": 0,
+						"letters": "so",
+						"quality_score": 95,
+						"stress_score": 96,
+						"predicted_stress_level": 1,
+						"extent": [
+							1597,
+							1627
+						]
+					}
+				]
+			},
+			{
+				"word": "they",
+				"quality_score": 82,
+				"phone_score_list": [
+					{
+						"phone": "dh",
+						"stress_level": null,
+						"extent": [
+							1630,
+							1639
+						],
+						"quality_score": 75.66666666666666,
+						"word_extent": [
+							0,
+							2
+						],
+						"sound_most_like": "d"
+					},
+					{
+						"phone": "ey",
+						"stress_level": 1,
+						"extent": [
+							1639,
+							1666
+						],
+						"quality_score": 87.88888888888889,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							2,
+							4
+						],
+						"sound_most_like": "ey"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "they",
+						"quality_score": 82,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1630,
+							1666
+						]
+					}
+				]
+			},
+			{
+				"word": "always",
+				"quality_score": 81,
+				"phone_score_list": [
+					{
+						"phone": "ao",
+						"stress_level": 1,
+						"extent": [
+							1666,
+							1678
+						],
+						"quality_score": 95,
+						"stress_score": 92,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ao"
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							1678,
+							1687
+						],
+						"quality_score": 88.33333333333333,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "l"
+					},
+					{
+						"phone": "w",
+						"stress_level": null,
+						"extent": [
+							1687,
+							1696
+						],
+						"quality_score": 88.66666666666667,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "w"
+					},
+					{
+						"phone": "iy",
+						"stress_level": 0,
+						"extent": [
+							1696,
+							1699
+						],
+						"quality_score": 45.833333333333336,
+						"stress_score": 96,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "ih"
+					},
+					{
+						"phone": "z",
+						"stress_level": null,
+						"extent": [
+							1699,
+							1700
+						],
+						"quality_score": 85,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "z"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "al",
+						"quality_score": 92,
+						"stress_score": 92,
+						"predicted_stress_level": 0,
+						"extent": [
+							1666,
+							1687
+						]
+					},
+					{
+						"phone_count": 3,
+						"stress_level": 0,
+						"letters": "ways",
+						"quality_score": 73,
+						"stress_score": 96,
+						"predicted_stress_level": 1,
+						"extent": [
+							1687,
+							1700
+						]
+					}
+				]
+			},
+			{
+				"word": "stand",
+				"quality_score": 75,
+				"phone_score_list": [
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							1700,
+							1711
+						],
+						"quality_score": 99.27272727272727,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "s"
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							1711,
+							1720
+						],
+						"quality_score": 91,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "t"
+					},
+					{
+						"phone": "ae",
+						"stress_level": 1,
+						"extent": [
+							1720,
+							1729
+						],
+						"quality_score": 86,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "ae"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							1729,
+							1741
+						],
+						"quality_score": 99.75,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "d",
+						"stress_level": null,
+						"extent": [
+							1741,
+							1741
+						],
+						"quality_score": 0,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": null
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 5,
+						"stress_level": 1,
+						"letters": "stand",
+						"quality_score": 75,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1700,
+							1741
+						]
+					}
+				]
+			},
+			{
+				"word": "by",
+				"quality_score": 99,
+				"phone_score_list": [
+					{
+						"phone": "b",
+						"stress_level": null,
+						"extent": [
+							1741,
+							1750
+						],
+						"quality_score": 99.33333333333333,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "b"
+					},
+					{
+						"phone": "ay",
+						"stress_level": 1,
+						"extent": [
+							1750,
+							1765
+						],
+						"quality_score": 99.6,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ay"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "by",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1741,
+							1765
+						]
+					}
+				]
+			},
+			{
+				"word": "me",
+				"quality_score": 99,
+				"phone_score_list": [
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							1765,
+							1774
+						],
+						"quality_score": 98.66666666666667,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "iy",
+						"stress_level": 1,
+						"extent": [
+							1774,
+							1792
+						],
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "iy"
+					}
+				],
+				"ending_punctuation": ".",
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "me",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1765,
+							1792
+						]
+					}
+				]
+			},
+			{
+				"word": "And",
+				"quality_score": 93,
+				"phone_score_list": [
+					{
+						"phone": "ae",
+						"stress_level": 1,
+						"extent": [
+							1855,
+							1873
+						],
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ae"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							1873,
+							1885
+						],
+						"quality_score": 79.41666666666667,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "d",
+						"stress_level": null,
+						"extent": [
+							1885,
+							1891
+						],
+						"quality_score": 100,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "d"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "and",
+						"quality_score": 93,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1855,
+							1891
+						]
+					}
+				]
+			},
+			{
+				"word": "my",
+				"quality_score": 98,
+				"phone_score_list": [
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							1921,
+							1930
+						],
+						"quality_score": 100,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "ay",
+						"stress_level": 1,
+						"extent": [
+							1930,
+							1945
+						],
+						"quality_score": 97,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ay"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "my",
+						"quality_score": 98,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							1921,
+							1945
+						]
+					}
+				]
+			},
+			{
+				"word": "weakness",
+				"quality_score": 91,
+				"phone_score_list": [
+					{
+						"phone": "w",
+						"stress_level": null,
+						"extent": [
+							1945,
+							1954
+						],
+						"quality_score": 73.66666666666666,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "v"
+					},
+					{
+						"phone": "iy",
+						"stress_level": 1,
+						"extent": [
+							1954,
+							1966
+						],
+						"quality_score": 97.5,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							3
+						],
+						"sound_most_like": "iy"
+					},
+					{
+						"phone": "k",
+						"stress_level": null,
+						"extent": [
+							1966,
+							1975
+						],
+						"quality_score": 91.66666666666667,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "k"
+					},
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							1975,
+							1981
+						],
+						"quality_score": 99.5,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							1981,
+							1993
+						],
+						"quality_score": 85,
+						"stress_score": 94,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							1993,
+							2002
+						],
+						"quality_score": 98,
+						"word_extent": [
+							6,
+							8
+						],
+						"sound_most_like": "s"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "weak",
+						"quality_score": 88,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							1945,
+							1975
+						]
+					},
+					{
+						"phone_count": 3,
+						"stress_level": 0,
+						"letters": "ness",
+						"quality_score": 94,
+						"stress_score": 94,
+						"predicted_stress_level": 1,
+						"extent": [
+							1975,
+							2002
+						]
+					}
+				]
+			},
+			{
+				"word": "is",
+				"quality_score": 97,
+				"phone_score_list": [
+					{
+						"phone": "ih",
+						"stress_level": 1,
+						"extent": [
+							2002,
+							2014
+						],
+						"quality_score": 94.5,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ih"
+					},
+					{
+						"phone": "z",
+						"stress_level": null,
+						"extent": [
+							2014,
+							2029
+						],
+						"quality_score": 98.8,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "z"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "is",
+						"quality_score": 97,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							2002,
+							2029
+						]
+					}
+				]
+			},
+			{
+				"word": "dead",
+				"quality_score": 100,
+				"phone_score_list": [
+					{
+						"phone": "d",
+						"stress_level": null,
+						"extent": [
+							2029,
+							2044
+						],
+						"quality_score": 99.8,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "d"
+					},
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							2044,
+							2059
+						],
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							3
+						],
+						"sound_most_like": "eh"
+					},
+					{
+						"phone": "d",
+						"stress_level": null,
+						"extent": [
+							2059,
+							2071
+						],
+						"quality_score": 100,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "d"
+					}
+				],
+				"ending_punctuation": ".",
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "dead",
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2029,
+							2071
+						]
+					}
+				]
+			},
+			{
+				"word": "I'm",
+				"quality_score": 96,
+				"phone_score_list": [
+					{
+						"phone": "ay",
+						"stress_level": 1,
+						"extent": [
+							2074,
+							2089
+						],
+						"quality_score": 98.8,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ay"
+					},
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							2089,
+							2090
+						],
+						"quality_score": 94,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "m"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "i'm",
+						"quality_score": 96,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2074,
+							2090
+						]
+					}
+				]
+			},
+			{
+				"word": "not",
+				"quality_score": 99,
+				"phone_score_list": [
+					{
+						"phone": "n",
+						"stress_level": null,
+						"extent": [
+							2090,
+							2104
+						],
+						"quality_score": 99.64285714285714,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "n"
+					},
+					{
+						"phone": "aa",
+						"stress_level": 1,
+						"extent": [
+							2104,
+							2116
+						],
+						"quality_score": 98.5,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "aa"
+					},
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							2116,
+							2122
+						],
+						"quality_score": 100,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "t"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "not",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2090,
+							2122
+						]
+					}
+				]
+			},
+			{
+				"word": "able",
+				"quality_score": 83,
+				"phone_score_list": [
+					{
+						"phone": "ey",
+						"stress_level": 1,
+						"extent": [
+							2128,
+							2152
+						],
+						"quality_score": 99.5,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "ey"
+					},
+					{
+						"phone": "b",
+						"stress_level": null,
+						"extent": [
+							2152,
+							2161
+						],
+						"quality_score": 99.66666666666667,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "b"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							2161,
+							2170
+						],
+						"quality_score": 35,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "er",
+						"child_phones": [
+							{
+								"extent": [
+									2161,
+									2164
+								],
+								"quality_score": 35,
+								"sound_most_like": "uh"
+							},
+							{
+								"extent": [
+									2164,
+									2170
+								],
+								"quality_score": 35,
+								"sound_most_like": "er"
+							}
+						]
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							2170,
+							2182
+						],
+						"quality_score": 98.5,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "l"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 1,
+						"stress_level": 1,
+						"letters": "a",
+						"quality_score": 100,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2128,
+							2152
+						]
+					},
+					{
+						"phone_count": 3,
+						"stress_level": 0,
+						"letters": "ble",
+						"quality_score": 78,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							2152,
+							2182
+						]
+					}
+				]
+			},
+			{
+				"word": "to",
+				"quality_score": 99,
+				"phone_score_list": [
+					{
+						"phone": "t",
+						"stress_level": null,
+						"extent": [
+							2182,
+							2188
+						],
+						"quality_score": 100,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "t"
+					},
+					{
+						"phone": "uw",
+						"stress_level": 1,
+						"extent": [
+							2188,
+							2197
+						],
+						"quality_score": 98,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "uw"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "to",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							2182,
+							2197
+						]
+					}
+				]
+			},
+			{
+				"word": "solve",
+				"quality_score": 92,
+				"phone_score_list": [
+					{
+						"phone": "s",
+						"stress_level": null,
+						"extent": [
+							2197,
+							2218
+						],
+						"quality_score": 94.42857142857143,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "s"
+					},
+					{
+						"phone": "aa",
+						"stress_level": 1,
+						"extent": [
+							2218,
+							2239
+						],
+						"quality_score": 94.71428571428571,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "aa"
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							2239,
+							2242
+						],
+						"quality_score": 100,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "l"
+					},
+					{
+						"phone": "v",
+						"stress_level": null,
+						"extent": [
+							2242,
+							2254
+						],
+						"quality_score": 79.58333333333333,
+						"word_extent": [
+							3,
+							5
+						],
+						"sound_most_like": "ao",
+						"child_phones": [
+							{
+								"extent": [
+									2242,
+									2245
+								],
+								"quality_score": 100,
+								"sound_most_like": "v"
+							},
+							{
+								"extent": [
+									2245,
+									2248
+								],
+								"quality_score": 18.333333333333325,
+								"sound_most_like": "ao"
+							},
+							{
+								"extent": [
+									2248,
+									2254
+								],
+								"quality_score": 100,
+								"sound_most_like": "v"
+							}
+						]
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 4,
+						"stress_level": 1,
+						"letters": "solve",
+						"quality_score": 92,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2197,
+							2254
+						]
+					}
+				]
+			},
+			{
+				"word": "big",
+				"quality_score": 71,
+				"phone_score_list": [
+					{
+						"phone": "b",
+						"stress_level": null,
+						"extent": [
+							2254,
+							2260
+						],
+						"quality_score": 100,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "b"
+					},
+					{
+						"phone": "ih",
+						"stress_level": 1,
+						"extent": [
+							2260,
+							2272
+						],
+						"quality_score": 77.75,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "uw"
+					},
+					{
+						"phone": "g",
+						"stress_level": null,
+						"extent": [
+							2272,
+							2273
+						],
+						"quality_score": 35,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "m"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "big",
+						"quality_score": 71,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2254,
+							2273
+						]
+					}
+				]
+			},
+			{
+				"word": "math",
+				"quality_score": 99,
+				"phone_score_list": [
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							2273,
+							2284
+						],
+						"quality_score": 99.45454545454545,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "ae",
+						"stress_level": 1,
+						"extent": [
+							2284,
+							2293
+						],
+						"quality_score": 98.33333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "ae"
+					},
+					{
+						"phone": "th",
+						"stress_level": null,
+						"extent": [
+							2293,
+							2296
+						],
+						"quality_score": 100,
+						"word_extent": [
+							2,
+							4
+						],
+						"sound_most_like": "th"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "math",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							2273,
+							2296
+						]
+					}
+				]
+			},
+			{
+				"word": "problems",
+				"quality_score": 98,
+				"phone_score_list": [
+					{
+						"phone": "p",
+						"stress_level": null,
+						"extent": [
+							2296,
+							2311
+						],
+						"quality_score": 95,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "p"
+					},
+					{
+						"phone": "r",
+						"stress_level": null,
+						"extent": [
+							2311,
+							2317
+						],
+						"quality_score": 100,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "r"
+					},
+					{
+						"phone": "aa",
+						"stress_level": 1,
+						"extent": [
+							2317,
+							2326
+						],
+						"quality_score": 92.33333333333333,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "aa"
+					},
+					{
+						"phone": "b",
+						"stress_level": null,
+						"extent": [
+							2326,
+							2335
+						],
+						"quality_score": 98.33333333333333,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "b"
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							2335,
+							2341
+						],
+						"quality_score": 99.5,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "l"
+					},
+					{
+						"phone": "ah",
+						"stress_level": 0,
+						"extent": [
+							2341,
+							2350
+						],
+						"quality_score": 98,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"word_extent": [
+							5,
+							6
+						],
+						"sound_most_like": "ah"
+					},
+					{
+						"phone": "m",
+						"stress_level": null,
+						"extent": [
+							2350,
+							2356
+						],
+						"quality_score": 100,
+						"word_extent": [
+							6,
+							7
+						],
+						"sound_most_like": "m"
+					},
+					{
+						"phone": "z",
+						"stress_level": null,
+						"extent": [
+							2356,
+							2380
+						],
+						"quality_score": 100,
+						"word_extent": [
+							7,
+							8
+						],
+						"sound_most_like": "z"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "pro",
+						"quality_score": 96,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2296,
+							2326
+						]
+					},
+					{
+						"phone_count": 5,
+						"stress_level": 0,
+						"letters": "blems",
+						"quality_score": 99,
+						"stress_score": 100,
+						"predicted_stress_level": 0,
+						"extent": [
+							2326,
+							2380
+						]
+					}
+				]
+			},
+			{
+				"word": "well",
+				"quality_score": 88,
+				"phone_score_list": [
+					{
+						"phone": "w",
+						"stress_level": null,
+						"extent": [
+							2407,
+							2419
+						],
+						"quality_score": 92.75,
+						"word_extent": [
+							0,
+							1
+						],
+						"sound_most_like": "w"
+					},
+					{
+						"phone": "eh",
+						"stress_level": 1,
+						"extent": [
+							2419,
+							2428
+						],
+						"quality_score": 98.66666666666667,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							1,
+							2
+						],
+						"sound_most_like": "eh"
+					},
+					{
+						"phone": "l",
+						"stress_level": null,
+						"extent": [
+							2428,
+							2443
+						],
+						"quality_score": 71.6,
+						"word_extent": [
+							2,
+							4
+						],
+						"sound_most_like": "p",
+						"child_phones": [
+							{
+								"extent": [
+									2428,
+									2437
+								],
+								"quality_score": 96,
+								"sound_most_like": "l"
+							},
+							{
+								"extent": [
+									2437,
+									2440
+								],
+								"quality_score": 35,
+								"sound_most_like": "k"
+							},
+							{
+								"extent": [
+									2440,
+									2443
+								],
+								"quality_score": 35,
+								"sound_most_like": "p"
+							}
+						]
+					}
+				],
+				"ending_punctuation": ".",
+				"syllable_score_list": [
+					{
+						"phone_count": 3,
+						"stress_level": 1,
+						"letters": "well",
+						"quality_score": 88,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2407,
+							2443
+						]
+					}
+				]
+			},
+			{
+				"word": "Thank",
+				"quality_score": 90,
+				"phone_score_list": [
+					{
+						"phone": "th",
+						"stress_level": null,
+						"extent": [
+							2497,
+							2506
+						],
+						"quality_score": 100,
+						"word_extent": [
+							0,
+							2
+						],
+						"sound_most_like": "th"
+					},
+					{
+						"phone": "ae",
+						"stress_level": 1,
+						"extent": [
+							2506,
+							2512
+						],
+						"quality_score": 73.66666666666667,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "eh"
+					},
+					{
+						"phone": "ng",
+						"stress_level": null,
+						"extent": [
+							2512,
+							2521
+						],
+						"quality_score": 98.33333333333333,
+						"word_extent": [
+							3,
+							4
+						],
+						"sound_most_like": "ng"
+					},
+					{
+						"phone": "k",
+						"stress_level": null,
+						"extent": [
+							2521,
+							2527
+						],
+						"quality_score": 90,
+						"word_extent": [
+							4,
+							5
+						],
+						"sound_most_like": "k"
+					}
+				],
+				"syllable_score_list": [
+					{
+						"phone_count": 4,
+						"stress_level": 1,
+						"letters": "thank",
+						"quality_score": 90,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2497,
+							2527
+						]
+					}
+				]
+			},
+			{
+				"word": "you",
+				"quality_score": 90,
+				"phone_score_list": [
+					{
+						"phone": "y",
+						"stress_level": null,
+						"extent": [
+							2527,
+							2536
+						],
+						"quality_score": 97,
+						"word_extent": [
+							0,
+							2
+						],
+						"sound_most_like": "y"
+					},
+					{
+						"phone": "uw",
+						"stress_level": 1,
+						"extent": [
+							2536,
+							2554
+						],
+						"quality_score": 82,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"word_extent": [
+							2,
+							3
+						],
+						"sound_most_like": "uw"
+					}
+				],
+				"ending_punctuation": ".",
+				"syllable_score_list": [
+					{
+						"phone_count": 2,
+						"stress_level": 1,
+						"letters": "you",
+						"quality_score": 90,
+						"stress_score": 100,
+						"predicted_stress_level": 1,
+						"extent": [
+							2527,
+							2554
+						]
+					}
+				]
+			}
+		],
+		"relevance": {
+			"class": "TRUE"
+		},
+		"ielts_score": {
+			"pronunciation": 7.5,
+			"fluency": 7,
+			"grammar": 6,
+			"coherence": 6,
+			"vocab": 5,
+			"overall": 6.5
+		},
+		"pte_score": {
+			"pronunciation": 80,
+			"fluency": 66,
+			"grammar": 52,
+			"coherence": 50,
+			"vocab": 37,
+			"overall": 57
+		},
+		"speechace_score": {
+			"pronunciation": 86,
+			"fluency": 77,
+			"grammar": 68,
+			"coherence": 67,
+			"vocab": 58,
+			"overall": 71
+		},
+		"toeic_score": {
+			"pronunciation": 170,
+			"fluency": 160,
+			"grammar": 120,
+			"coherence": 120,
+			"vocab": 90,
+			"overall": 140
+		},
+		"cefr_score": {
+			"pronunciation": "C1",
+			"fluency": "B2",
+			"grammar": "B1",
+			"coherence": "B1",
+			"vocab": "A2",
+			"overall": "B1+"
+		},
+		"grammar": {
+			"overall_metrics": {
+				"length": {
+					"score": 3,
+					"level": "low",
+					"message": "Your response is too short to demonstrate the necessary grammatical range. You should aim for a minimum of 5 sentences or 60 words."
+				},
+				"lexical_diversity": {
+					"score": 6,
+					"level": "mid",
+					"message": "Your response has less variation in syntactic structures than most advanced speakers. To improve, you should use more diverse verbs and adjective/adverbial modifiers."
+				},
+				"grammatical_accuracy": {
+					"score": 10,
+					"level": "high"
+				},
+				"grammatical_range": {
+					"score": 4,
+					"level": "mid",
+					"message": "Your response has less grammatical range than most advanced speakers. To improve, you should use a wider range of phrasal and clausal structures and verb-argument constructions.",
+					"noun_phrase_complexity": {
+						"score": 5,
+						"level": "mid"
+					},
+					"noun_phrase_variation": {
+						"score": 3,
+						"level": "low",
+						"message": "Your response lacks noun phrase variation. You should vary the structure of noun phrases particularly in terms of the numbers and types of modifiers used."
+					},
+					"verb_construction_variation": {
+						"score": 1,
+						"level": "low",
+						"message": "Your response lacks verb construction variation. In addition to verbs with simple fixed structures, you should use verbs that may require different numbers and types of structural elements."
+					},
+					"adverb_modifier_variation": {
+						"score": 7,
+						"level": "mid"
+					}
+				}
+			},
+			"errors": []
+		},
+		"vocab": {
+			"overall_metrics": {
+				"lexical_diversity": {
+					"score": 5,
+					"level": "mid",
+					"message": "Your response has less word diversity than most advanced speakers. To improve, you should reduce repetition and use more diverse words."
+				},
+				"word_sophistication": {
+					"score": 9,
+					"level": "high"
+				},
+				"word_specificity": {
+					"score": 8,
+					"level": "high"
+				},
+				"academic_language_use": {
+					"score": 1,
+					"level": "low",
+					"message": "Your response is low on use of academic words. You should learn and use some academic language in your responses to improve."
+				},
+				"collocation_commonality": {
+					"score": 8,
+					"level": "high"
+				},
+				"idiomaticity": {
+					"score": 7,
+					"level": "mid"
+				}
+			}
+		},
+		"coherence": {
+			"overall_metrics": {
+				"lexical_density": {
+					"score": 8,
+					"level": "high"
+				},
+				"basic_connectives": {
+					"score": 7,
+					"level": "mid",
+					"examples": [
+						"and"
+					]
+				},
+				"causal_connectives": {
+					"score": 7,
+					"level": "mid",
+					"examples": [
+						"because"
+					]
+				},
+				"negative_connectives": {
+					"score": 1,
+					"level": "low",
+					"message": "Your response is low or lacking in use of negative connectives. You should practice negative connectives such as admittedly, alternatively, nevertheless, conversely to signal contrast where appropriate."
+				},
+				"pronoun_density": {
+					"score": 4,
+					"level": "mid"
+				},
+				"adverb_diversity": {
+					"score": 10,
+					"level": "high"
+				},
+				"verb_diversity": {
+					"score": 10,
+					"level": "high"
+				}
+			}
+		},
+		"fluency": {
+			"segment_metrics_list": [
+				{
+					"segment": [
+						0,
+						3
+					],
+					"duration": 1.2,
+					"articulation_length": 1.05,
+					"syllable_count": 6,
+					"correct_syllable_count": 4,
+					"correct_word_count": 3,
+					"word_count": 3,
+					"speech_rate": 5,
+					"articulation_rate": 5.714285714285714,
+					"syllable_correct_per_minute": 200,
+					"word_correct_per_minute": 150,
+					"all_pause_count": 1,
+					"all_pause_duration": 0.15,
+					"mean_length_run": 1.05,
+					"max_length_run": 1.05,
+					"all_pause_list": [
+						[
+							115,
+							130
+						]
+					],
+					"ielts_score": {
+						"pronunciation": 7.5,
+						"fluency": 7.5,
+						"grammar": 4,
+						"coherence": 4,
+						"vocab": 4
+					},
+					"pte_score": {
+						"pronunciation": 80,
+						"fluency": 78,
+						"grammar": 20,
+						"coherence": 20,
+						"vocab": 20
+					},
+					"speechace_score": {
+						"pronunciation": 86,
+						"fluency": 84,
+						"grammar": 44,
+						"coherence": 44,
+						"vocab": 44
+					},
+					"toeic_score": {
+						"pronunciation": 170,
+						"fluency": 170,
+						"grammar": 50,
+						"coherence": 50,
+						"vocab": 50
+					},
+					"cefr_score": {
+						"pronunciation": "C1",
+						"fluency": "C1",
+						"grammar": "A1",
+						"coherence": "A1",
+						"vocab": "A1"
+					}
+				},
+				{
+					"segment": [
+						3,
+						18
+					],
+					"duration": 6.225,
+					"articulation_length": 4.47,
+					"syllable_count": 20,
+					"correct_syllable_count": 16,
+					"correct_word_count": 11,
+					"word_count": 15,
+					"speech_rate": 3.21285140562249,
+					"articulation_rate": 4.47427293064877,
+					"syllable_correct_per_minute": 154.21686746987953,
+					"word_correct_per_minute": 106.02409638554218,
+					"all_pause_count": 6,
+					"all_pause_duration": 1.755,
+					"mean_length_run": 0.894,
+					"max_length_run": 1.29,
+					"all_pause_list": [
+						[
+							130,
+							145
+						],
+						[
+							274,
+							358
+						],
+						[
+							445,
+							451
+						],
+						[
+							529,
+							538
+						],
+						[
+							577,
+							622
+						],
+						[
+							736,
+							752.5
+						]
+					],
+					"ielts_score": {
+						"pronunciation": 7.5,
+						"fluency": 7,
+						"grammar": 5.5,
+						"coherence": 6,
+						"vocab": 6
+					},
+					"pte_score": {
+						"pronunciation": 74,
+						"fluency": 67,
+						"grammar": 43,
+						"coherence": 50,
+						"vocab": 49
+					},
+					"speechace_score": {
+						"pronunciation": 82,
+						"fluency": 78,
+						"grammar": 62,
+						"coherence": 67,
+						"vocab": 66
+					},
+					"toeic_score": {
+						"pronunciation": 170,
+						"fluency": 160,
+						"grammar": 110,
+						"coherence": 120,
+						"vocab": 120
+					},
+					"cefr_score": {
+						"pronunciation": "C1",
+						"fluency": "B2",
+						"grammar": "A2+",
+						"coherence": "B1",
+						"vocab": "B1"
+					}
+				},
+				{
+					"segment": [
+						18,
+						29
+					],
+					"duration": 3.315,
+					"articulation_length": 2.92,
+					"syllable_count": 15,
+					"correct_syllable_count": 11,
+					"correct_word_count": 8,
+					"word_count": 11,
+					"speech_rate": 4.524886877828054,
+					"articulation_rate": 5.136986301369864,
+					"syllable_correct_per_minute": 199.0950226244344,
+					"word_correct_per_minute": 144.79638009049773,
+					"all_pause_count": 5,
+					"all_pause_duration": 0.395,
+					"mean_length_run": 0.73,
+					"max_length_run": 1.47,
+					"all_pause_list": [
+						[
+							752.5,
+							769
+						],
+						[
+							916,
+							917
+						],
+						[
+							955,
+							956
+						],
+						[
+							1009,
+							1015
+						],
+						[
+							1069,
+							1084
+						]
+					],
+					"ielts_score": {
+						"pronunciation": 7.5,
+						"fluency": 7.5,
+						"grammar": 5,
+						"coherence": 5.5,
+						"vocab": 4
+					},
+					"pte_score": {
+						"pronunciation": 77,
+						"fluency": 78,
+						"grammar": 30,
+						"coherence": 43,
+						"vocab": 20
+					},
+					"speechace_score": {
+						"pronunciation": 84,
+						"fluency": 84,
+						"grammar": 53,
+						"coherence": 62,
+						"vocab": 47
+					},
+					"toeic_score": {
+						"pronunciation": 170,
+						"fluency": 170,
+						"grammar": 90,
+						"coherence": 110,
+						"vocab": 50
+					},
+					"cefr_score": {
+						"pronunciation": "C1",
+						"fluency": "C1",
+						"grammar": "A2",
+						"coherence": "A2+",
+						"vocab": "A1"
+					}
+				},
+				{
+					"segment": [
+						29,
+						48
+					],
+					"duration": 7.395,
+					"articulation_length": 6.2,
+					"syllable_count": 27,
+					"correct_syllable_count": 21,
+					"correct_word_count": 14,
+					"word_count": 19,
+					"speech_rate": 3.6511156186612577,
+					"articulation_rate": 4.354838709677419,
+					"syllable_correct_per_minute": 170.38539553752537,
+					"word_correct_per_minute": 113.59026369168357,
+					"all_pause_count": 7,
+					"all_pause_duration": 1.195,
+					"mean_length_run": 1.0333333333333332,
+					"max_length_run": 1.62,
+					"all_pause_list": [
+						[
+							1084,
+							1099
+						],
+						[
+							1261,
+							1300
+						],
+						[
+							1378,
+							1381
+						],
+						[
+							1516,
+							1543
+						],
+						[
+							1564,
+							1565
+						],
+						[
+							1627,
+							1630
+						],
+						[
+							1792,
+							1823.5
+						]
+					],
+					"ielts_score": {
+						"pronunciation": 7.5,
+						"fluency": 7,
+						"grammar": 5,
+						"coherence": 5.5,
+						"vocab": 4
+					},
+					"pte_score": {
+						"pronunciation": 76,
+						"fluency": 67,
+						"grammar": 35,
+						"coherence": 40,
+						"vocab": 20
+					},
+					"speechace_score": {
+						"pronunciation": 83,
+						"fluency": 78,
+						"grammar": 57,
+						"coherence": 60,
+						"vocab": 44
+					},
+					"toeic_score": {
+						"pronunciation": 170,
+						"fluency": 160,
+						"grammar": 90,
+						"coherence": 110,
+						"vocab": 50
+					},
+					"cefr_score": {
+						"pronunciation": "C1",
+						"fluency": "B2",
+						"grammar": "A2",
+						"coherence": "A2+",
+						"vocab": "A1"
+					}
+				},
+				{
+					"segment": [
+						48,
+						53
+					],
+					"duration": 2.49,
+					"articulation_length": 1.86,
+					"syllable_count": 6,
+					"correct_syllable_count": 6,
+					"correct_word_count": 5,
+					"word_count": 5,
+					"speech_rate": 2.4096385542168672,
+					"articulation_rate": 3.225806451612903,
+					"syllable_correct_per_minute": 144.57831325301203,
+					"word_correct_per_minute": 120.48192771084337,
+					"all_pause_count": 3,
+					"all_pause_duration": 0.63,
+					"mean_length_run": 0.93,
+					"max_length_run": 1.5,
+					"all_pause_list": [
+						[
+							1823.5,
+							1855
+						],
+						[
+							1891,
+							1921
+						],
+						[
+							2071,
+							2072.5
+						]
+					],
+					"ielts_score": {
+						"pronunciation": 8.5,
+						"fluency": 6.5,
+						"grammar": 4,
+						"coherence": 4,
+						"vocab": 4
+					},
+					"pte_score": {
+						"pronunciation": 90,
+						"fluency": 55,
+						"grammar": 20,
+						"coherence": 20,
+						"vocab": 20
+					},
+					"speechace_score": {
+						"pronunciation": 95,
+						"fluency": 70,
+						"grammar": 47,
+						"coherence": 44,
+						"vocab": 44
+					},
+					"toeic_score": {
+						"pronunciation": 190,
+						"fluency": 140,
+						"grammar": 50,
+						"coherence": 50,
+						"vocab": 50
+					},
+					"cefr_score": {
+						"pronunciation": "C2",
+						"fluency": "B1+",
+						"grammar": "A1",
+						"coherence": "A1",
+						"vocab": "A1"
+					}
+				},
+				{
+					"segment": [
+						53,
+						62
+					],
+					"duration": 3.975,
+					"articulation_length": 3.36,
+					"syllable_count": 11,
+					"correct_syllable_count": 9,
+					"correct_word_count": 8,
+					"word_count": 9,
+					"speech_rate": 2.7672955974842766,
+					"articulation_rate": 3.2738095238095237,
+					"syllable_correct_per_minute": 135.8490566037736,
+					"word_correct_per_minute": 120.75471698113208,
+					"all_pause_count": 4,
+					"all_pause_duration": 0.615,
+					"mean_length_run": 1.12,
+					"max_length_run": 2.52,
+					"all_pause_list": [
+						[
+							2072.5,
+							2074
+						],
+						[
+							2122,
+							2128
+						],
+						[
+							2380,
+							2407
+						],
+						[
+							2443,
+							2470
+						]
+					],
+					"ielts_score": {
+						"pronunciation": 8.5,
+						"fluency": 6.5,
+						"grammar": 4.5,
+						"coherence": 7,
+						"vocab": 4
+					},
+					"pte_score": {
+						"pronunciation": 89,
+						"fluency": 62,
+						"grammar": 25,
+						"coherence": 71,
+						"vocab": 20
+					},
+					"speechace_score": {
+						"pronunciation": 92,
+						"fluency": 74,
+						"grammar": 50,
+						"coherence": 80,
+						"vocab": 44
+					},
+					"toeic_score": {
+						"pronunciation": 190,
+						"fluency": 140,
+						"grammar": 80,
+						"coherence": 160,
+						"vocab": 50
+					},
+					"cefr_score": {
+						"pronunciation": "C2",
+						"fluency": "B1+",
+						"grammar": "A1+",
+						"coherence": "B2",
+						"vocab": "A1"
+					}
+				},
+				{
+					"segment": [
+						62,
+						64
+					],
+					"duration": 0.84,
+					"articulation_length": 0.57,
+					"syllable_count": 2,
+					"correct_syllable_count": 2,
+					"correct_word_count": 2,
+					"word_count": 2,
+					"speech_rate": 2.380952380952381,
+					"articulation_rate": 3.5087719298245617,
+					"syllable_correct_per_minute": 142.85714285714286,
+					"word_correct_per_minute": 142.85714285714286,
+					"all_pause_count": 1,
+					"all_pause_duration": 0.27,
+					"mean_length_run": 0.57,
+					"max_length_run": 0.57,
+					"all_pause_list": [
+						[
+							2470,
+							2497
+						]
+					],
+					"ielts_score": {
+						"pronunciation": 8,
+						"fluency": 6.5,
+						"grammar": 4,
+						"coherence": 4,
+						"vocab": 4
+					},
+					"pte_score": {
+						"pronunciation": 86,
+						"fluency": 55,
+						"grammar": 20,
+						"coherence": 20,
+						"vocab": 20
+					},
+					"speechace_score": {
+						"pronunciation": 90,
+						"fluency": 70,
+						"grammar": 44,
+						"coherence": 44,
+						"vocab": 44
+					},
+					"toeic_score": {
+						"pronunciation": 180,
+						"fluency": 140,
+						"grammar": 50,
+						"coherence": 50,
+						"vocab": 50
+					},
+					"cefr_score": {
+						"pronunciation": "C1+",
+						"fluency": "B1+",
+						"grammar": "A1",
+						"coherence": "A1",
+						"vocab": "A1"
+					}
+				}
+			],
+			"overall_metrics": {
+				"segment": [
+					0,
+					64
+				],
+				"duration": 25.44,
+				"articulation_length": 20.43,
+				"syllable_count": 87,
+				"correct_syllable_count": 69,
+				"correct_word_count": 51,
+				"word_count": 64,
+				"speech_rate": 3.4198113207547167,
+				"articulation_rate": 4.258443465491924,
+				"syllable_correct_per_minute": 162.73584905660377,
+				"word_correct_per_minute": 120.28301886792453,
+				"all_pause_count": 21,
+				"all_pause_duration": 5.01,
+				"mean_length_run": 0.9286363636363636,
+				"max_length_run": 2.52,
+				"all_pause_list": [
+					[
+						115,
+						145
+					],
+					[
+						274,
+						358
+					],
+					[
+						445,
+						451
+					],
+					[
+						529,
+						538
+					],
+					[
+						577,
+						622
+					],
+					[
+						736,
+						769
+					],
+					[
+						916,
+						917
+					],
+					[
+						955,
+						956
+					],
+					[
+						1009,
+						1015
+					],
+					[
+						1069,
+						1099
+					],
+					[
+						1261,
+						1300
+					],
+					[
+						1378,
+						1381
+					],
+					[
+						1516,
+						1543
+					],
+					[
+						1564,
+						1565
+					],
+					[
+						1627,
+						1630
+					],
+					[
+						1792,
+						1855
+					],
+					[
+						1891,
+						1921
+					],
+					[
+						2071,
+						2074
+					],
+					[
+						2122,
+						2128
+					],
+					[
+						2380,
+						2407
+					],
+					[
+						2443,
+						2497
+					]
+				]
+			},
+			"fluency_version": "0.7",
+			"ielts_subscore_version": "0.4"
+		},
+		"asr_version": "0.4"
+	},
+	"version": "9.9"
+}
