@@ -1,7 +1,7 @@
 # set -o pipefail && ali-to-phones --write-lengths=true data/test/force_align/final.mdl "ark:gunzip -c data/test/force_align/ali.1.gz|" ark,t:- | sed -E "s/^[^ ]+ //" | awk 'BEGIN{FS=" ; "; OFS="\n";} {print "begin " $1; if (NF>1) print "end " $NF; for (n=1;n<=NF;n++) print "all " $n; }' | sort | uniq -c | gzip -c > data/test/force_align/phone_stats.1.gz 
-# Started at Fri Mar 28 11:26:17 IST 2025
+# Started at Mon Mar 31 09:53:37 IST 2025
 #
 ali-to-phones --write-lengths=true data/test/force_align/final.mdl 'ark:gunzip -c data/test/force_align/ali.1.gz|' ark,t:- 
 LOG (ali-to-phones[5.5.1168~1-01aad]:main():ali-to-phones.cc:134) Done 1 utterances.
 # Accounting: time=0 threads=1
-# Ended (code 0) at Fri Mar 28 11:26:17 IST 2025, elapsed time 0 seconds
+# Ended (code 0) at Mon Mar 31 09:53:38 IST 2025, elapsed time 0 seconds

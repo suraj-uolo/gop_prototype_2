@@ -8,6 +8,14 @@ from analysis_utils.utils.kaldi_utils import load_phone_map, load_text_file
 from analysis_utils.analysis.alignment_loader import load_aligned_phones, load_gop_scores, load_phone_durations
 from analysis_utils.analysis.word_analysis import group_phones_to_words
 from analysis_utils.metrics.pronunciation_metrics import calculate_real_metrics, get_detailed_grade
+from analysis_utils.metrics.scoring_metrics import (
+    calculate_ielts_score, calculate_pte_score, calculate_speechace_score,
+    calculate_toeic_score, calculate_cefr_score
+)
+from analysis_utils.analysis.word_metrics import (
+    analyze_word, analyze_grammar, analyze_vocabulary,
+    analyze_coherence, analyze_fluency
+)
 
 def analyze_pronunciation(output_dir: str, threshold: float = -6.0):
     """Analyze pronunciation quality using GOP scores and real metrics
@@ -63,14 +71,13 @@ def analyze_pronunciation(output_dir: str, threshold: float = -6.0):
     if not text_map:
         raise ValueError("Failed to load text file")
 
-    # Generate both text and JSON outputs in the output directory
+    # Generate text output in the output directory
     output_file = os.path.join(output_dir, "pronunciation_analysis.txt")
     json_file = os.path.join(output_dir, "analysis_results.json")
     
-    # Collect all utterance analyses
-    all_analyses = []
-    
     try:
+        all_analyses = []
+        
         with open(output_file, "w") as out:
             for utt_id in aligned_phones:
                 out.write(f"Utterance: {utt_id}\n")
@@ -145,31 +152,10 @@ def analyze_pronunciation(output_dir: str, threshold: float = -6.0):
                     
                     out.write("\n" + "="*50 + "\n")
                     
-                    # Calculate IELTS-style scores based on metrics
-                    pronunciation_score = 5.0  # Default score
-                    if metrics['posterior'] >= -6.0:
-                        pronunciation_score = 6.0
-                    elif metrics['posterior'] >= -8.0:
-                        pronunciation_score = 5.0
-                    elif metrics['posterior'] >= -10.0:
-                        pronunciation_score = 4.0
-                    else:
-                        pronunciation_score = 3.0
-                    
-                    fluency_score = 5.0  # Default score
-                    if 3.0 <= metrics['speech_rate'] <= 5.0 and metrics['rhythm_variance'] < 0.02:
-                        fluency_score = 6.0
-                    elif 2.0 <= metrics['speech_rate'] <= 6.0 and metrics['rhythm_variance'] < 0.04:
-                        fluency_score = 5.0
-                    elif 1.5 <= metrics['speech_rate'] <= 7.0 and metrics['rhythm_variance'] < 0.06:
-                        fluency_score = 4.0
-                    else:
-                        fluency_score = 3.0
-                    
                     # Get actual text for this utterance
                     actual_text = text_map.get(utt_id, "")
                     
-                    # Group phones into words
+                    # Group phones into words with detailed analysis
                     word_score_list = group_phones_to_words(
                         aligned_phones[utt_id],
                         post_scores[utt_id],
@@ -178,28 +164,61 @@ def analyze_pronunciation(output_dir: str, threshold: float = -6.0):
                         actual_text
                     )
                     
+                    # Analyze each word in detail
+                    word_analyses = []
+                    for word_info in word_score_list:
+                        word_analysis = analyze_word(
+                            word_info["word"],
+                            word_info["phone_score_list"],
+                            [{'post': s['quality_score'], 'like': s['quality_score'], 'ratio': s['quality_score']} 
+                             for s in word_info["phone_score_list"]]
+                        )
+                        word_analyses.append(word_analysis)
+                    
+                    # Calculate various scoring metrics
+                    ielts_score = calculate_ielts_score(metrics)
+                    pte_score = calculate_pte_score(metrics)
+                    speechace_score = calculate_speechace_score(metrics)
+                    toeic_score = calculate_toeic_score(metrics)
+                    cefr_score = calculate_cefr_score(metrics)
+                    
+                    # Calculate additional analysis metrics
+                    grammar_analysis = analyze_grammar(actual_text, word_analyses)
+                    vocab_analysis = analyze_vocabulary(actual_text, word_analyses)
+                    coherence_analysis = analyze_coherence(actual_text, word_analyses)
+                    fluency_analysis = analyze_fluency(word_analyses, phone_durations[utt_id])
+                    
                     # Collect analysis for this utterance
                     utterance_analysis = {
                         "utterance_id": utt_id,
                         "status": "success",
                         "speech_score": {
                             "transcript": actual_text,
-                            "word_score_list": word_score_list,
-                            "ielts_score": {
-                                "pronunciation": pronunciation_score,
-                                "fluency": fluency_score,
-                                "grammar": 0.0,
-                                "coherence": 0.0,
-                                "vocab": 0.0,
-                                "overall": (pronunciation_score + fluency_score) / 2
-                            }
+                            "word_score_list": word_analyses,
+                            "ielts_score": ielts_score,
+                            "pte_score": pte_score,
+                            "speechace_score": speechace_score,
+                            "toeic_score": toeic_score,
+                            "cefr_score": cefr_score,
+                            "grammar": grammar_analysis,
+                            "vocab": vocab_analysis,
+                            "coherence": coherence_analysis,
+                            "fluency": fluency_analysis
                         }
                     }
                     all_analyses.append(utterance_analysis)
         
         # Save all analyses to JSON file at once
         with open(json_file, "w") as f:
-            json.dump({"utterances": all_analyses}, f, indent=2)
+            json.dump({
+                "status": "success",
+                "quota_remaining": -1,
+                "utterances": all_analyses,
+                "version": "9.9",
+                "asr_version": "0.4",
+                "fluency_version": "0.7",
+                "ielts_subscore_version": "0.4"
+            }, f, indent=2)
                         
     except IOError as e:
         raise RuntimeError(f"Failed to write output files: {str(e)}")

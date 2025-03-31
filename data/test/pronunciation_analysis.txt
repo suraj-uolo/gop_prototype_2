@@ -1,5 +1,5 @@
 Utterance: 011c0201
-Aligned Phones: SIL AY1_S L_B AY1_I K_E SIL AY1_B S_E SIL K_B R_I IY1_I M_E SIL B_B EH1_I T_I ER0_E DH_B AE1_I N_E CH_B AO1_I K_I L_I AH0_I T_I S_E SIL
+Aligned Phones: SIL HH_B W_I IH1_I CH_E W_B UH1_I D_E Y_B UW1_E SIL P_B R_I AH0_I F_I ER1_E SIL T_B IY1_E SIL AO1_B R_E SIL K_B AA1_I F_I IY0_E SIL
 
 Pronunciation Analysis:
 
@@ -7,34 +7,36 @@ Detailed Analysis:
 -----------------
 
 Pronunciation Scores:
-Posterior-based: -7.647 (Needs improvement)
-Likelihood-based: 0.743 (Excellent)
-Likelihood Ratio: -6.379 (Needs improvement)
+Posterior-based: -7.929 (Needs improvement)
+Likelihood-based: 0.478 (Good)
+Likelihood Ratio: -6.937 (Needs improvement)
 Score Consistency: Needs improvement
-Score Range: 13.128
-Score Median: -7.597
+Score Range: 11.622
+Score Median: -8.371
 
 Fluency Metrics:
-Speech Rate: 4.99 phones/sec (Good)
-Number of Pauses: 5
-Average Pause Duration: 0.336s
-Pause Ratio: 0.349 (Fair)
-Rhythm Variance: 0.011 (Good)
+Speech Rate: 4.66 phones/sec (Good)
+Number of Pauses: 6
+Average Pause Duration: 0.277s
+Pause Ratio: 0.352 (Needs improvement)
+Rhythm Variance: 0.010 (Good)
 
 Prosody Metrics:
 Stress Ratio: 0.000 (Needs improvement)
-Average Phone Duration: 0.130s
-Max Phone Duration: 0.430s
+Average Phone Duration: 0.139s
+Max Phone Duration: 0.350s
 Min Phone Duration: 0.030s
 
 Phoneme-level Analysis:
 
 Phonemes Needing Improvement:
-  L_B: -11.799
-  SIL: -11.658
-  AY1_I: -11.574
-  M_E: -8.398
-  IY1_I: -6.231
-  CH_B: -6.032
+  SIL: -9.673
+  R_E: -9.378
+  UW1_E: -8.682
+  UH1_I: -6.865
+  Y_B: -6.709
+  IH1_I: -6.649
+  P_B: -6.558
+  W_B: -6.206
 
 ==================================================

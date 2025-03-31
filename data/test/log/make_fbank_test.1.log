@@ -1,10 +1,10 @@
 # compute-fbank-feats --write-utt2dur=ark,t:data/test/log/utt2dur.1 --verbose=2 --config=conf/fbank.conf scp,p:data/test/log/wav.1.scp ark:- | copy-feats --compress=true --write-num-frames=ark,t:data/test/log/utt2num_frames.1 ark:- ark,scp:/Users/uolo/Desktop/goparrot/data/test/data/raw_fbank_test.1.ark,/Users/uolo/Desktop/goparrot/data/test/data/raw_fbank_test.1.scp 
-# Started at Fri Mar 28 11:26:15 IST 2025
+# Started at Mon Mar 31 09:53:36 IST 2025
 #
 copy-feats --compress=true --write-num-frames=ark,t:data/test/log/utt2num_frames.1 ark:- ark,scp:/Users/uolo/Desktop/goparrot/data/test/data/raw_fbank_test.1.ark,/Users/uolo/Desktop/goparrot/data/test/data/raw_fbank_test.1.scp 
 compute-fbank-feats --write-utt2dur=ark,t:data/test/log/utt2dur.1 --verbose=2 --config=conf/fbank.conf scp,p:data/test/log/wav.1.scp ark:- 
 VLOG[2] (compute-fbank-feats[5.5.1168~1-01aad]:main():compute-fbank-feats.cc:182) Processed features for key 011c0201
 LOG (compute-fbank-feats[5.5.1168~1-01aad]:main():compute-fbank-feats.cc:185)  Done 1 out of 1 utterances.
 LOG (copy-feats[5.5.1168~1-01aad]:main():copy-feats.cc:143) Copied 1 feature matrices.
-# Accounting: time=1 threads=1
-# Ended (code 0) at Fri Mar 28 11:26:16 IST 2025, elapsed time 1 seconds
+# Accounting: time=0 threads=1
+# Ended (code 0) at Mon Mar 31 09:53:36 IST 2025, elapsed time 0 seconds
