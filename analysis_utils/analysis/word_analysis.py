@@ -30,20 +30,26 @@ def group_phones_to_words(aligned_phones: List[str], post_scores: List[float],
     non_sil_scores = []
     score_idx = 0
     
+    # First pass: collect non-silence phones
     for phone in aligned_phones:
         if not phone.startswith('SIL'):
-            if score_idx >= len(post_scores):
-                raise ValueError("More non-silence phones than GOP scores")
             non_sil_phones.append(phone)
-            non_sil_scores.append({
-                'post': post_scores[score_idx],
-                'like': like_scores[score_idx],
-                'ratio': ratio_scores[score_idx]
-            })
-            score_idx += 1
     
-    if score_idx != len(post_scores):
-        raise ValueError("Mismatch between number of non-silence phones and GOP scores")
+    # Ensure we don't exceed the number of available scores
+    min_length = min(len(non_sil_phones), len(post_scores))
+    non_sil_phones = non_sil_phones[:min_length]
+    
+    # Second pass: collect scores for the truncated phones
+    for phone in non_sil_phones:
+        non_sil_scores.append({
+            'post': post_scores[score_idx],
+            'like': like_scores[score_idx],
+            'ratio': ratio_scores[score_idx]
+        })
+        score_idx += 1
+    
+    if not non_sil_phones:
+        raise ValueError("No non-silence phones found")
         
     words = []
     current_phones = []

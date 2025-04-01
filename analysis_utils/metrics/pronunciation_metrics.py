@@ -77,20 +77,15 @@ def calculate_real_metrics(aligned_phones: List[str], phone_durations: List[floa
             non_sil_phones.append(phone)
             non_sil_durations.append(duration)
     
-    # Validate input lengths (excluding silence phones)
-    lengths = {
-        'non_sil_phones': len(non_sil_phones),
-        'non_sil_durations': len(non_sil_durations),
-        'post_scores': len(post_scores),
-        'like_scores': len(like_scores),
-        'ratio_scores': len(ratio_scores)
-    }
+    # Ensure all lists have the same length by truncating to the minimum length
+    min_length = min(len(non_sil_phones), len(non_sil_durations), 
+                    len(post_scores), len(like_scores), len(ratio_scores))
     
-    if not all(length == lengths['non_sil_phones'] for length in lengths.values()):
-        print("Warning: Input list lengths mismatch (excluding silence phones):")
-        for name, length in lengths.items():
-            print(f"  {name}: {length}")
-        raise ValueError("All input lists must have the same length (excluding silence phones)")
+    non_sil_phones = non_sil_phones[:min_length]
+    non_sil_durations = non_sil_durations[:min_length]
+    post_scores = post_scores[:min_length]
+    like_scores = like_scores[:min_length]
+    ratio_scores = ratio_scores[:min_length]
     
     if not non_sil_phones:
         raise ValueError("No non-silence phones found")

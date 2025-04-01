@@ -1,5 +1,5 @@
 Utterance: 011c0201
-Aligned Phones: SIL HH_B W_I IH1_I CH_E W_B UH1_I D_E Y_B UW1_E SIL P_B R_I AH0_I F_I ER1_E SIL T_B IY1_E SIL AO1_B R_E SIL K_B AA1_I F_I IY0_E SIL
+Aligned Phones: SIL K_B AE1_I N_E Y_B UW1_E S_B AA1_I L_I V_E DH_B IH0_I S_E SIL R_B IH1_I D_I AH0_I L_E SIL HH_B W_I AH1_I T_E K_B AE1_I N_E W_B IY1_E HH_B OW1_I L_I D_E SIL W_B IH0_I DH_I AW1_I T_E Y_B UW1_I Z_I IH0_I NG_E AA1_B R_E HH_B AE1_I N_I D_I Z_E SIL TH_B IH1_I NG_I K_E SIL TH_B IH1_I NG_I K_E SIL Y_B EH1_I S_E SIL IH0_B T_E IH0_B Z_E SIL AA1_B R_E SIL B_B R_I EH1_I TH_E SIL
 
 Pronunciation Analysis:
 
@@ -7,36 +7,40 @@ Detailed Analysis:
 -----------------
 
 Pronunciation Scores:
-Posterior-based: -7.929 (Needs improvement)
-Likelihood-based: 0.478 (Good)
-Likelihood Ratio: -6.937 (Needs improvement)
+Posterior-based: -6.883 (Needs improvement)
+Likelihood-based: 1.480 (Excellent)
+Likelihood Ratio: -5.787 (Fair)
 Score Consistency: Needs improvement
-Score Range: 11.622
-Score Median: -8.371
+Score Range: 15.655
+Score Median: -7.147
 
 Fluency Metrics:
-Speech Rate: 4.66 phones/sec (Good)
-Number of Pauses: 6
-Average Pause Duration: 0.277s
-Pause Ratio: 0.352 (Needs improvement)
-Rhythm Variance: 0.010 (Good)
+Speech Rate: 6.23 phones/sec (Needs improvement)
+Number of Pauses: 11
+Average Pause Duration: 0.314s
+Pause Ratio: 0.316 (Fair)
+Rhythm Variance: 0.004 (Good)
 
 Prosody Metrics:
 Stress Ratio: 0.000 (Needs improvement)
-Average Phone Duration: 0.139s
-Max Phone Duration: 0.350s
+Average Phone Duration: 0.110s
+Max Phone Duration: 0.370s
 Min Phone Duration: 0.030s
 
 Phoneme-level Analysis:
 
 Phonemes Needing Improvement:
-  SIL: -9.673
-  R_E: -9.378
-  UW1_E: -8.682
-  UH1_I: -6.865
-  Y_B: -6.709
-  IH1_I: -6.649
-  P_B: -6.558
-  W_B: -6.206
+  S_E: -13.489
+  L_I: -11.840
+  K_B: -10.057
+  NG_I: -9.498
+  DH_B: -8.754
+  HH_B: -8.586
+  SIL: -8.203
+  D_E: -7.953
+  Z_I: -6.420
+  L_I: -6.325
+  Y_B: -6.266
+  AE1_I: -6.229
 
 ==================================================

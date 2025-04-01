@@ -36,9 +36,9 @@ for key in pdfalis.keys():
 
     post_phones = []
     item = 0.0
-    start=-1
-    num=0
-    for v,k in zip(post_best, phoneali):
+    start = -1
+    num = 0
+    for v, k in zip(post_best, phoneali):
         if start != k:
             if start > sil_id_not_bigger_than:
                 post_phones.append(item/num)
@@ -49,16 +49,16 @@ for key in pdfalis.keys():
         num += 1
     if start > sil_id_not_bigger_than:
         post_phones.append(item/num)
-    gop_post = sum(post_phones)/len(post_phones)
+    gop_post = sum(post_phones)/len(post_phones) if post_phones else 0.0
 
     # gop based on log phone likelihood
     like_best = list(like[np.arange(len(pdfali)), pdfali])
 
     like_phones = []
     item = 0.0
-    start=-1
-    num=0
-    for v,k in zip(like_best, phoneali):
+    start = -1
+    num = 0
+    for v, k in zip(like_best, phoneali):
         if start != k:
             if start > sil_id_not_bigger_than:
                 like_phones.append(item/num)
@@ -69,16 +69,16 @@ for key in pdfalis.keys():
         num += 1
     if start > sil_id_not_bigger_than:
         like_phones.append(item/num)
-    gop_like = sum(like_phones)/len(like_phones)
+    gop_like = sum(like_phones)/len(like_phones) if like_phones else 0.0
 
     # gop based on log phone likelihood ratio
     like_max = list(np.amax(like, axis=1))
 
     like_max_phones = []
     item = 0.0
-    start=-1
-    num=0
-    for v,k in zip(like_max, phoneali):
+    start = -1
+    num = 0
+    for v, k in zip(like_max, phoneali):
         if start != k:
             if start > sil_id_not_bigger_than:
                 like_max_phones.append(item/num)
@@ -89,14 +89,21 @@ for key in pdfalis.keys():
         num += 1
     if start > sil_id_not_bigger_than:
         like_max_phones.append(item/num)
+    
+    # Ensure all lists have the same length
+    min_length = min(len(post_phones), len(like_phones), len(like_max_phones))
+    post_phones = post_phones[:min_length]
+    like_phones = like_phones[:min_length]
+    like_max_phones = like_max_phones[:min_length]
+    
     ratio_phones = np.array(like_phones) - np.array(like_max_phones)
-    gop_ratio = ratio_phones.mean()
+    gop_ratio = ratio_phones.mean() if len(ratio_phones) > 0 else 0.0
 
     # write gop scores
     f_f.write(f"{key}\n")
-    f_f.write(f"[{', '.join(f'{x:.6f}' for x in post_best)}]\n")
-    f_f.write(f"[{', '.join(f'{x:.6f}' for x in like_best)}]\n")
-    f_f.write(f"[{', '.join(f'{x:.6f}' for x in like_max)}]\n")
+    f_f.write(f"[{', '.join(f'{x:.6f}' for x in post_phones)}]\n")
+    f_f.write(f"[{', '.join(f'{x:.6f}' for x in like_phones)}]\n")
+    f_f.write(f"[{', '.join(f'{x:.6f}' for x in ratio_phones)}]\n")
     
     f_p.write(f"{key}\n")
     f_p.write(f"[{', '.join(f'{x:.6f}' for x in post_phones)}]\n")

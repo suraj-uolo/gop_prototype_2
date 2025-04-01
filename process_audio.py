@@ -8,14 +8,18 @@ import argparse
 from typing import Tuple, Dict, Any
 import shutil
 import sys
+import string
+from audio_recorder import AudioRecorder
+from audio_cleaner import AudioCleaner
+from transcription import Transcriber
 
 class AudioProcessor:
-    def __init__(self, audio_file: str, text: str, utterance_id: str = None):
+    def __init__(self, audio_file: str = None, text: str = None, utterance_id: str = None):
         """Initialize with audio file path and text transcription"""
         self.audio_file = audio_file
         self.text = text
         # Use the utterance ID from the audio file name if not provided
-        self.utterance_id = utterance_id or os.path.splitext(os.path.basename(audio_file))[0]
+        self.utterance_id = utterance_id or "011c0201"  # Default utterance ID
         # Use the same ID for speaker ID
         self.speaker_id = self.utterance_id
         self.data_dir = "data/test"
@@ -376,34 +380,125 @@ class AudioProcessor:
         except Exception as e:
             raise RuntimeError(f"Error setting up Kaldi environment: {str(e)}")
 
+    def record_and_process_audio(self, duration: int = 5) -> str:
+        """Record audio for specified duration and process it"""
+        try:
+            # Initialize recorder
+            recorder = AudioRecorder(recordings_dir="recordings")
+            
+            # Record audio
+            print(f"\n🎙️ Recording audio for {duration} seconds...")
+            recorded_file = recorder.record_audio(duration=duration)
+            print(f"✅ Audio recorded: {recorded_file}")
+            
+            # Clean the audio
+            cleaner = AudioCleaner(cleaned_dir="cleaned_recordings")
+            cleaned_file = cleaner.clean_audio(recorded_file)
+            print(f"✅ Audio cleaned: {cleaned_file}")
+            
+            # Transcribe the audio
+            transcriber = Transcriber()
+            results, transcript = transcriber.transcribe_audio(cleaned_file)
+            print(f"✅ Audio transcribed: {transcript}")
+            
+            # Process transcript
+            self.text = transcript.upper().translate(str.maketrans("", "", string.punctuation))
+            print(f"✅ Processed transcript: {self.text}")
+            
+            # Save to final location
+            final_path = os.path.join(self.audio_dir, f"{self.utterance_id}.wav")
+            
+            # Delete existing file if it exists
+            if os.path.exists(final_path):
+                os.remove(final_path)
+                print(f"🗑️ Deleted existing file: {final_path}")
+            
+            # Copy cleaned file to final location
+            shutil.copy2(cleaned_file, final_path)
+            print(f"✅ Audio saved to: {final_path}")
+            
+            self.audio_file = final_path
+            return final_path
+            
+        except Exception as e:
+            print(f"❌ Error in recording and processing: {str(e)}", file=sys.stderr)
+            raise
+
+    def process_existing_audio(self, audio_path: str) -> str:
+        """Process an existing audio file"""
+        try:
+            # Clean the audio
+            cleaner = AudioCleaner(cleaned_dir="cleaned_recordings")
+            cleaned_file = cleaner.clean_audio(audio_path)
+            print(f"✅ Audio cleaned: {cleaned_file}")
+            
+            # Transcribe the audio
+            transcriber = Transcriber()
+            results, transcript = transcriber.transcribe_audio(cleaned_file)
+            print(f"✅ Audio transcribed: {transcript}")
+            
+            # Process transcript
+            self.text = transcript.upper().translate(str.maketrans("", "", string.punctuation))
+            print(f"✅ Processed transcript: {self.text}")
+            
+            # Save to final location
+            final_path = os.path.join(self.audio_dir, f"{self.utterance_id}.wav")
+            
+            # Delete existing file if it exists
+            if os.path.exists(final_path):
+                os.remove(final_path)
+                print(f"🗑️ Deleted existing file: {final_path}")
+            
+            # Copy cleaned file to final location
+            shutil.copy2(cleaned_file, final_path)
+            print(f"✅ Audio saved to: {final_path}")
+            
+            self.audio_file = final_path
+            return final_path
+            
+        except Exception as e:
+            print(f"❌ Error in processing existing audio: {str(e)}", file=sys.stderr)
+            raise
+
 def main():
     parser = argparse.ArgumentParser(description="Process audio file and generate pronunciation analysis")
-    parser.add_argument("audio_file", help="Path to the input audio file")
-    parser.add_argument("text", help="Transcription of the audio")
-    parser.add_argument("--utterance-id", help="Optional utterance ID (default: filename without extension)")
+    parser.add_argument("--audio-file", help="Path to the input audio file (optional)")
+    parser.add_argument("--duration", type=int, default=5, help="Duration of recording in seconds (default: 5)")
+    parser.add_argument("--utterance-id", help="Optional utterance ID (default: 011c0201)")
     parser.add_argument("--output", help="Output JSON file path (default: analysis_results.json)")
     parser.add_argument("--debug", action="store_true", help="Enable debug output")
     
     args = parser.parse_args()
     
     try:
-        # Process the audio
-        processor = AudioProcessor(args.audio_file, args.text, args.utterance_id)
+        # Initialize processor
+        processor = AudioProcessor(utterance_id=args.utterance_id)
+        
+        # Process audio based on input
+        if args.audio_file:
+            print(f"\n📂 Processing existing audio file: {args.audio_file}")
+            processor.process_existing_audio(args.audio_file)
+        else:
+            print("\n🎙️ No audio file provided. Starting recording...")
+            processor.record_and_process_audio(duration=args.duration)
+        
+        # Run analysis
+        print("\n🔍 Running pronunciation analysis...")
         results = processor.process()
         
-        # # Save results
-        # output_file = args.output or "analysis_results.json"
-        # with open(output_file, 'w') as f:
-        #     json.dump(results, f, indent=2)
+        # Save results
+        output_file = args.output or "analysis_results.json"
+        with open(output_file, 'w') as f:
+            json.dump(results, f, indent=2)
         
-        # print(f"Analysis results saved to {output_file}")
+        print(f"\n✅ Analysis results saved to {output_file}")
         
         if results["processing_status"] == "error":
-            print(f"Error: {results['error_message']}", file=sys.stderr)
+            print(f"❌ Error: {results['error_message']}", file=sys.stderr)
             sys.exit(1)
             
     except Exception as e:
-        print(f"Fatal error: {str(e)}", file=sys.stderr)
+        print(f"❌ Fatal error: {str(e)}", file=sys.stderr)
         sys.exit(1)
 
 if __name__ == "__main__":

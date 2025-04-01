@@ -1,0 +1,6 @@
+sounddevice>=0.4.6
+numpy>=1.24.0
+scipy>=1.10.0
+noisereduce>=2.0.0
+SpeechRecognition>=3.10.0
+whisper-timestamped>=1.14.2 

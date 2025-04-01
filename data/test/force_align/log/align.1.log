@@ -1,5 +1,5 @@
 # compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int data/test/force_align/tree exp/nnet3/tdnn/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 64 -f 2- data/lang/words.txt data/test/split1/1/text|" ark:- | nnet3-align-compiled --transition-scale=1.0 --acoustic-scale=1.0 --self-loop-scale=1.0 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --use-gpu=no --beam=200 --retry-beam=400 exp/nnet3/tdnn/final.mdl ark:- "ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- |" "ark:|gzip -c >data/test/force_align/ali.1.gz" 
-# Started at Mon Mar 31 09:53:37 IST 2025
+# Started at Tue Apr  1 14:36:36 IST 2025
 #
 compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int data/test/force_align/tree exp/nnet3/tdnn/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 64 -f 2- data/lang/words.txt data/test/split1/1/text|' ark:- 
 nnet3-align-compiled --transition-scale=1.0 --acoustic-scale=1.0 --self-loop-scale=1.0 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --use-gpu=no --beam=200 --retry-beam=400 exp/nnet3/tdnn/final.mdl ark:- 'ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- |' 'ark:|gzip -c >data/test/force_align/ali.1.gz' 
@@ -9,9 +9,9 @@ LOG (nnet3-align-compiled[5.5.1168~1-01aad]:Collapse():nnet-utils.cc:1488) Added
 LOG (compile-train-graphs[5.5.1168~1-01aad]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 1 graphs, failed for 0
 apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
 LOG (apply-cmvn[5.5.1168~1-01aad]:main():apply-cmvn.cc:81) Copied 1 utterances.
-LOG (nnet3-align-compiled[5.5.1168~1-01aad]:main():nnet3-align-compiled.cc:198) Overall log-likelihood per frame is 0.644481 over 472 frames.
+LOG (nnet3-align-compiled[5.5.1168~1-01aad]:main():nnet3-align-compiled.cc:198) Overall log-likelihood per frame is 1.51921 over 1092 frames.
 LOG (nnet3-align-compiled[5.5.1168~1-01aad]:main():nnet3-align-compiled.cc:201) Retried 0 out of 1 utterances.
 LOG (nnet3-align-compiled[5.5.1168~1-01aad]:main():nnet3-align-compiled.cc:203) Done 1, errors on 0
-LOG (nnet3-align-compiled[5.5.1168~1-01aad]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.00425 seconds taken in nnet3 compilation total (breakdown: 0.00233 compilation, 0.000976 optimization, 0 shortcut expansion, 0.000184 checking, 0 computing indexes, 0.000756 misc.) + 0 I/O.
+LOG (nnet3-align-compiled[5.5.1168~1-01aad]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.00453 seconds taken in nnet3 compilation total (breakdown: 0.00262 compilation, 0.000929 optimization, 0 shortcut expansion, 0.000187 checking, 9.54e-07 computing indexes, 0.000798 misc.) + 0 I/O.
 # Accounting: time=0 threads=1
-# Ended (code 0) at Mon Mar 31 09:53:37 IST 2025, elapsed time 0 seconds
+# Ended (code 0) at Tue Apr  1 14:36:36 IST 2025, elapsed time 0 seconds
