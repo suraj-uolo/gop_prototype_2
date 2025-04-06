@@ -79,7 +79,8 @@ class Transcriber:
             return f"ERROR: Unexpected issue - {e}"
 
 # Example Usage:
-transcriber = Transcriber()
-timestamped, result = transcriber.transcribe_audio("/Users/uolo/Desktop/Pronunciation_detection/test_recordings/5.wav")
-print(timestamped)
-print(result)
+if __name__ == "__main__":
+    transcriber = Transcriber()
+    timestamped, result = transcriber.transcribe_audio("/Users/uolo/Desktop/Pronunciation_detection/test_recordings/5.wav")
+    print(timestamped)
+    print(result)

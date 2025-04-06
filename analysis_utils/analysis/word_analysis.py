@@ -67,7 +67,7 @@ def group_phones_to_words(aligned_phones: List[str], post_scores: List[float],
                 # If we have phones from previous word, save it
                 if current_phones and word_index < len(text_words):
                     word = text_words[word_index]
-                    avg_score = np.mean(current_scores)
+                    avg_score = sum(current_scores) / len(current_scores)
                     
                     words.append({
                         "word": word,
@@ -89,7 +89,7 @@ def group_phones_to_words(aligned_phones: List[str], post_scores: List[float],
                 
             # Add current phone and score
             current_phones.append(phone)
-            current_scores.append((non_sil_scores[i]['post'] + non_sil_scores[i]['like'] + non_sil_scores[i]['ratio']) / 3)
+            current_scores.append(non_sil_scores[i]['post'] * 0.3 + non_sil_scores[i]['like'] * 0.5 + non_sil_scores[i]['ratio'] * 0.2)
             
             # End of word
             if phone.endswith('_E'):
@@ -103,7 +103,7 @@ def group_phones_to_words(aligned_phones: List[str], post_scores: List[float],
                     break
                     
                 word = text_words[word_index]
-                avg_score = np.mean(current_scores)
+                avg_score = sum(current_scores) / len(current_scores)
                 
                 words.append({
                     "word": word,
@@ -128,7 +128,7 @@ def group_phones_to_words(aligned_phones: List[str], post_scores: List[float],
         # Handle any remaining phones as a word if we have text words left
         if current_phones and word_index < len(text_words):
             word = text_words[word_index]
-            avg_score = np.mean(current_scores)
+            avg_score = sum(current_scores) / len(current_scores)
             
             words.append({
                 "word": word,

@@ -1,19 +1,19 @@
 from typing import Dict, List, Any
 import numpy as np
 import math
-from .phoneme_matcher import CMUPhonemeMapper, analyze_word_phonemes
+from .phoneme_matcher import CMUPhonemeMapper
 
-def normalize_score(score: float, target_range: Dict[str, float] = None) -> int:
+def normalize_score(score: float, target_range: Dict[str, float] | None = None) -> int:
     """
     Normalize score to match output-0.json format
     Uses reference ranges observed in output-0.json
     """
     if target_range is None:
         target_range = {
-            "min": 35,  # Minimum observed in output-0.json
-            "max": 99,  # Maximum observed in output-0.json
+            "min": 30,  # Minimum observed in output-0.json
+            "max": 100,  # Maximum observed in output-0.json
             "typical_low": 60,
-            "typical_high": 95
+            "typical_high": 99
         }
     
     # Clip to 0-1 first
@@ -54,21 +54,21 @@ def get_phone_threshold(phone: str) -> float:
     
     base = phone.rstrip('012')
     if base in vowels:
-        return -5  # Vowels are generally easier
+        return -6  # Vowels are generally easier
     elif base in fricatives:
-        return -3  # Fricatives are moderately difficult
+        return -6  # Fricatives are moderately difficult
     elif base in stops:
-        return -4  # Stops are relatively easy
+        return -6  # Stops are relatively easy
     elif base in nasals:
-        return -4  # Nasals are relatively easy
+        return -6  # Nasals are relatively easy
     elif base in approximants:
-        return -2  # Approximants can be challenging
-    return -3.5  # Default threshold
+        return -6  # Approximants can be challenging
+    return -5  # Default threshold
 
 def analyze_phone_quality(phone: str, scores: Dict[str, float], timing_info: Dict[str, Any] = None) -> Dict[str, Any]:
     """Analyze quality of individual phone pronunciation with timing information"""
     # Calculate weighted average of GOP scores
-    weights = {'post': 0.4, 'like': 0.4, 'ratio': 0.2}
+    weights = {'post': 0.1, 'like': 0.8, 'ratio': 0.1}
     avg_score = sum(scores[k] * weights[k] for k in weights)
     
     # Get phone-specific threshold
@@ -89,7 +89,6 @@ def analyze_phone_quality(phone: str, scores: Dict[str, float], timing_info: Dic
     result = {
         "phone": base_phone,
         "quality_score": quality_score,
-        "confidence": 1.0,  # Fixed as in output-0.json
         "stress_level": stress_level,
         "sound_most_like": get_closest_phone(base_phone, avg_score),
         "raw_score": avg_score,
@@ -139,7 +138,7 @@ def analyze_word(word: str, phones: List[Dict[str, Any]], scores: List[Dict[str,
                 for child in phone_timing['child_phones']:
                     child_result = {
                         "extent": [child['start'], child['end']],
-                        "quality_score": normalize_quality_score(child.get('quality', phone_result["quality_score"]) / 100),
+                        "quality_score": normalize_quality_score(child.get('quality') / 100) if child.get('quality') else phone_result["quality_score"],
                         "sound_most_like": child.get('sound', phone_result["sound_most_like"])
                     }
                     child_phones.append(child_result)
@@ -148,12 +147,11 @@ def analyze_word(word: str, phones: List[Dict[str, Any]], scores: List[Dict[str,
         phone_score_list.append(phone_result)
     
     # Calculate word-level metrics
-    quality_score = normalize_quality_score(np.mean([p["quality_score"] / 100 for p in phone_score_list]))
+    quality_score = (np.mean([p["quality_score"] for p in phone_score_list]))
     
     result = {
         "word": word,
         "quality_score": quality_score,
-        "confidence": 1.0,
         "phone_score_list": phone_score_list,
         "prosody_metrics": {
             "rhythm_score": 1.0,
@@ -530,15 +528,6 @@ def calculate_overall_fluency_metrics(word_analyses: List[Dict[str, Any]], durat
         }
     }
 
-def get_version_info() -> Dict[str, str]:
-    """Get version information for different components"""
-    return {
-        "version": "9.9",  # Main version
-        "asr_version": "0.4",  # ASR component version
-        "fluency_version": "0.7",  # Fluency analysis version
-        "ielts_subscore_version": "0.4"  # IELTS scoring version
-    }
-
 def check_relevance(text: str) -> Dict[str, str]:
     """Check if the text is relevant for analysis"""
     # This would ideally use more sophisticated relevance checking
@@ -558,11 +547,7 @@ def generate_full_analysis(text: str, word_analyses: List[Dict[str, Any]], durat
         return {
             "status": "error",
             "message": "Text too short for meaningful analysis",
-            "version": get_version_info()["version"]
         }
-    
-    # Get version info
-    versions = get_version_info()
     
     # Generate all analyses
     vocab_analysis = analyze_vocabulary(text, word_analyses)
@@ -592,7 +577,7 @@ def generate_full_analysis(text: str, word_analyses: List[Dict[str, Any]], durat
     }
     
     pte_scores = {k: v * 10 for k, v in ielts_scores.items()}  # Scale to PTE range (10-90)
-    speechace_scores = {k: v * 10 + 10 for k, v in ielts_scores.items()}  # Scale to SpeechAce range (20-100)
+    # speechace_scores = {k: v * 10 + 10 for k, v in ielts_scores.items()}  # Scale to SpeechAce range (20-100)
     toeic_scores = {k: v * 20 for k, v in ielts_scores.items()}  # Scale to TOEIC range (20-180)
     
     def get_cefr_level(score: float) -> str:
@@ -606,15 +591,13 @@ def generate_full_analysis(text: str, word_analyses: List[Dict[str, Any]], durat
     cefr_scores = {k: get_cefr_level(v) for k, v in ielts_scores.items()}
     
     return {
-        "status": "success",
-        "quota_remaining": -1,  # Not using quota system
+        "status": "success", # Not using quota system
         "speech_score": {
             "transcript": text,
             "word_score_list": word_analyses,
             "relevance": relevance,
             "ielts_score": ielts_scores,
             "pte_score": pte_scores,
-            "speechace_score": speechace_scores,
             "toeic_score": toeic_scores,
             "cefr_score": cefr_scores,
             "grammar": grammar_analysis,
@@ -622,5 +605,4 @@ def generate_full_analysis(text: str, word_analyses: List[Dict[str, Any]], durat
             "coherence": coherence_analysis,
             "fluency": fluency_analysis
         },
-        **versions
     } 

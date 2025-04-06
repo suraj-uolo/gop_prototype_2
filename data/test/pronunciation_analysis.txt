@@ -1,46 +1,174 @@
 Utterance: 011c0201
-Aligned Phones: SIL K_B AE1_I N_E Y_B UW1_E S_B AA1_I L_I V_E DH_B IH0_I S_E SIL R_B IH1_I D_I AH0_I L_E SIL HH_B W_I AH1_I T_E K_B AE1_I N_E W_B IY1_E HH_B OW1_I L_I D_E SIL W_B IH0_I DH_I AW1_I T_E Y_B UW1_I Z_I IH0_I NG_E AA1_B R_E HH_B AE1_I N_I D_I Z_E SIL TH_B IH1_I NG_I K_E SIL TH_B IH1_I NG_I K_E SIL Y_B EH1_I S_E SIL IH0_B T_E IH0_B Z_E SIL AA1_B R_E SIL B_B R_I EH1_I TH_E SIL
+Aligned Phones: SIL G_B UH2_I D_I B_I AY1_E T_B EY1_I K_E K_B EH1_I R_E AY1_S W_B AH0_I L_E S_B IY1_E Y_B UW1_E IH0_B N_E DH_B AH0_E AE2_B F_I T_I ER0_I N_I UW1_I N_E
 
 Pronunciation Analysis:
 
-Detailed Analysis:
------------------
-
-Pronunciation Scores:
-Posterior-based: -6.883 (Needs improvement)
-Likelihood-based: 1.480 (Excellent)
-Likelihood Ratio: -5.787 (Fair)
-Score Consistency: Needs improvement
-Score Range: 15.655
-Score Median: -7.147
-
-Fluency Metrics:
-Speech Rate: 6.23 phones/sec (Needs improvement)
-Number of Pauses: 11
-Average Pause Duration: 0.314s
-Pause Ratio: 0.316 (Fair)
-Rhythm Variance: 0.004 (Good)
-
-Prosody Metrics:
-Stress Ratio: 0.000 (Needs improvement)
-Average Phone Duration: 0.110s
-Max Phone Duration: 0.370s
-Min Phone Duration: 0.030s
+Detailed Phoneme Scores:
+--------------------------------------------------
+  SIL:
+    Likelihood Score: -4.532
+    Posterior Score: -13.548
+    Likelihood Ratio: -12.664
+------------------------------
+  G_B:
+    Likelihood Score: -0.210
+    Posterior Score: -10.228
+    Likelihood Ratio: -7.951
+------------------------------
+  UH2_I:
+    Likelihood Score: -3.915
+    Posterior Score: -12.582
+    Likelihood Ratio: -12.226
+------------------------------
+  D_I:
+    Likelihood Score: 0.430
+    Posterior Score: -8.240
+    Likelihood Ratio: -6.932
+------------------------------
+  B_I:
+    Likelihood Score: 0.438
+    Posterior Score: -7.440
+    Likelihood Ratio: -6.695
+------------------------------
+  AY1_E:
+    Likelihood Score: -4.326
+    Posterior Score: -11.867
+    Likelihood Ratio: -11.011
+------------------------------
+  T_B:
+    Likelihood Score: -5.445
+    Posterior Score: -13.827
+    Likelihood Ratio: -11.813
+------------------------------
+  EY1_I:
+    Likelihood Score: -5.898
+    Posterior Score: -14.150
+    Likelihood Ratio: -12.270
+------------------------------
+  K_E:
+    Likelihood Score: -6.715
+    Posterior Score: -14.781
+    Likelihood Ratio: -13.768
+------------------------------
+  K_B:
+    Likelihood Score: -5.860
+    Posterior Score: -14.167
+    Likelihood Ratio: -13.329
+------------------------------
+  EH1_I:
+    Likelihood Score: -1.904
+    Posterior Score: -10.625
+    Likelihood Ratio: -8.488
+------------------------------
+  R_E:
+    Likelihood Score: -3.250
+    Posterior Score: -11.924
+    Likelihood Ratio: -9.671
+------------------------------
+  AY1_S:
+    Likelihood Score: -0.589
+    Posterior Score: -8.713
+    Likelihood Ratio: -6.528
+------------------------------
+  W_B:
+    Likelihood Score: -3.211
+    Posterior Score: -11.659
+    Likelihood Ratio: -10.378
+------------------------------
+  AH0_I:
+    Likelihood Score: -3.719
+    Posterior Score: -12.043
+    Likelihood Ratio: -9.976
+------------------------------
+  L_E:
+    Likelihood Score: -3.737
+    Posterior Score: -11.450
+    Likelihood Ratio: -9.818
+------------------------------
+  S_B:
+    Likelihood Score: -2.647
+    Posterior Score: -10.582
+    Likelihood Ratio: -9.341
+------------------------------
+  IY1_E:
+    Likelihood Score: -4.951
+    Posterior Score: -12.978
+    Likelihood Ratio: -10.672
+------------------------------
+  Y_B:
+    Likelihood Score: -2.844
+    Posterior Score: -11.649
+    Likelihood Ratio: -9.541
+------------------------------
+  UW1_E:
+    Likelihood Score: 0.513
+    Posterior Score: -7.763
+    Likelihood Ratio: -5.015
+------------------------------
+  IH0_B:
+    Likelihood Score: -4.325
+    Posterior Score: -12.597
+    Likelihood Ratio: -9.720
+------------------------------
+  N_E:
+    Likelihood Score: -7.022
+    Posterior Score: -15.040
+    Likelihood Ratio: -13.985
+------------------------------
+  DH_B:
+    Likelihood Score: 0.084
+    Posterior Score: -7.797
+    Likelihood Ratio: -5.912
+------------------------------
+  AH0_E:
+    Likelihood Score: -2.033
+    Posterior Score: -10.047
+    Likelihood Ratio: -9.207
+------------------------------
+  AE2_B:
+    Likelihood Score: -3.337
+    Posterior Score: -11.655
+    Likelihood Ratio: -11.128
+------------------------------
+  F_I:
+    Likelihood Score: -6.132
+    Posterior Score: -14.911
+    Likelihood Ratio: -13.104
+------------------------------
+  T_I:
+    Likelihood Score: -7.260
+    Posterior Score: -15.702
+    Likelihood Ratio: -14.657
+------------------------------
+  ER0_I:
+    Likelihood Score: -6.163
+    Posterior Score: -14.444
+    Likelihood Ratio: -12.968
+------------------------------
+  N_I:
+    Likelihood Score: -6.973
+    Posterior Score: -15.583
+    Likelihood Ratio: -12.632
+------------------------------
+  UW1_I:
+    Likelihood Score: -3.033
+    Posterior Score: -10.778
+    Likelihood Ratio: -9.311
+------------------------------
 
 Phoneme-level Analysis:
 
 Phonemes Needing Improvement:
-  S_E: -13.489
-  L_I: -11.840
-  K_B: -10.057
-  NG_I: -9.498
-  DH_B: -8.754
-  HH_B: -8.586
-  SIL: -8.203
-  D_E: -7.953
-  Z_I: -6.420
-  L_I: -6.325
-  Y_B: -6.266
-  AE1_I: -6.229
+  T_I: -8.844
+  N_E: -8.520
+  N_I: -8.400
+  K_E: -8.227
+  F_I: -7.707
+  ER0_I: -7.671
+  K_B: -7.437
+  EY1_I: -7.361
+  T_B: -6.920
+  IY1_E: -6.326
+  SIL: -6.246
 
 ==================================================

@@ -180,9 +180,10 @@ class CMUPhonemeMapper:
         phoneme_similarity = phoneme_matches / total_phonemes if total_phonemes > 0 else 0
         
         # Combine scores with weights favoring phoneme presence over quality
-        final_score = (base_similarity * 0.3 + phoneme_similarity * 0.7) * 100
+        final_score = (base_similarity * 0.4 + phoneme_similarity * 0.6) * 100
         return min(100, max(0, final_score))
 
+# Not being used
 def analyze_word_phonemes(text: str, detected_phonemes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     Analyze word quality based on phoneme matching using CMUdict
@@ -243,28 +244,3 @@ def analyze_word_phonemes(text: str, detected_phonemes: List[Dict[str, Any]]) ->
         })
     
     return word_analyses
-
-def update_word_scores(word_analyses: List[Dict[str, Any]], phoneme_scores: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """
-    Update existing word analyses with CMUdict-based phoneme scores
-    Args:
-        word_analyses: Existing word analyses
-        phoneme_scores: New phoneme-based scores
-    Returns:
-        Updated word analyses
-    """
-    for word_analysis, phoneme_score in zip(word_analyses, phoneme_scores):
-        # Combine original score with phoneme score (weighted average)
-        original_score = word_analysis.get("quality_score", 0)
-        phoneme_quality = phoneme_score["quality_score"]
-        
-        # Give more weight to phoneme-based score
-        word_analysis["quality_score"] = phoneme_quality * 0.7 + original_score * 0.3
-        
-        # Add phoneme analysis details
-        word_analysis["phoneme_analysis"] = {
-            "expected_phonemes": phoneme_score["expected_phonemes"],
-            "detected_phonemes": phoneme_score["detected_phonemes"]
-        }
-    
-    return word_analyses 

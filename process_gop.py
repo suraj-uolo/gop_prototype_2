@@ -127,7 +127,7 @@ class GOPProcessor:
 
     def get_quality_grade(self, score: float) -> str:
         """Convert score to grade description"""
-        if score >= 0:
+        if score >= -5:
             return "Acceptable"
         else:
             return "Needs improvement"
@@ -193,7 +193,7 @@ class GOPProcessor:
                 # Calculate word score as average of all metrics
                 avg_scores = []
                 for p, l, r in zip(word_post, word_like, word_ratio):
-                    avg_scores.append((p + l + r) / 3)
+                    avg_scores.append(p*0.1 + l*0.8 + r*0.1)
                 
                 word_score = {
                     "word": word,

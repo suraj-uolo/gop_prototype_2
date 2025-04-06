@@ -52,23 +52,6 @@ def calculate_pte_score(metrics: Dict[str, float]) -> Dict[str, float]:
         "overall": ielts_to_pte(sum(ielts.values()) / len(ielts))
     }
 
-def calculate_speechace_score(metrics: Dict[str, float]) -> Dict[str, float]:
-    """Calculate SpeechAce scores based on metrics"""
-    # Convert to 0-100 scale
-    ielts = calculate_ielts_score(metrics)
-    
-    def ielts_to_speechace(score: float) -> float:
-        return min(100, max(0, (score - 1) * 14))
-    
-    return {
-        "pronunciation": ielts_to_speechace(ielts["pronunciation"]),
-        "fluency": ielts_to_speechace(ielts["fluency"]),
-        "grammar": ielts_to_speechace(ielts["grammar"]),
-        "coherence": ielts_to_speechace(ielts["coherence"]),
-        "vocab": ielts_to_speechace(ielts["vocab"]),
-        "overall": ielts_to_speechace(sum(ielts.values()) / len(ielts))
-    }
-
 def calculate_toeic_score(metrics: Dict[str, float]) -> Dict[str, float]:
     """Calculate TOEIC scores based on metrics"""
     # Convert to TOEIC scale (0-200)

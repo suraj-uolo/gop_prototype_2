@@ -168,7 +168,7 @@ class AudioProcessor:
         except Exception as e:
             return False, f"Error running command: {str(e)}"
 
-    def run_analysis(self):
+    def run_analysis(self, filename: str):
         """Run the Kaldi analysis pipeline"""
         # Stage 1: Feature extraction
         print("\nStage 1: Feature extraction...")
@@ -260,11 +260,11 @@ class AudioProcessor:
         
         # Run analysis script
         print("\nRunning analysis script...")
-        success, output = self.run_kaldi_command(f"python3 analyze.py {self.data_dir}")
+        success, output = self.run_kaldi_command(f"python3 analyze.py {self.data_dir} --output_filename {filename}.json")
         if not success:
             raise RuntimeError(f"Analysis script failed: {output}")
 
-    def process(self) -> Dict[str, Any]:
+    def process(self, filename: str) -> Dict[str, Any]:
         """Process the audio file and generate analysis"""
         try:
             # Step 1: Convert audio to 16kHz
@@ -277,7 +277,7 @@ class AudioProcessor:
             
             # Step 3: Run analysis
             print("Running analysis...")
-            self.run_analysis()
+            self.run_analysis(filename)
             
             # Step 4: Read results from pronunciation_analysis.txt
             print("Reading results...")
@@ -424,7 +424,7 @@ class AudioProcessor:
             print(f"❌ Error in recording and processing: {str(e)}", file=sys.stderr)
             raise
 
-    def process_existing_audio(self, audio_path: str) -> str:
+    def process_existing_audio(self, audio_path: str, text_file: str) -> str:
         """Process an existing audio file"""
         try:
             # Clean the audio
@@ -433,12 +433,12 @@ class AudioProcessor:
             print(f"✅ Audio cleaned: {cleaned_file}")
             
             # Transcribe the audio
-            transcriber = Transcriber()
-            results, transcript = transcriber.transcribe_audio(cleaned_file)
-            print(f"✅ Audio transcribed: {transcript}")
+            # transcriber = Transcriber()
+            # results, transcript = transcriber.transcribe_audio(cleaned_file)
+            # print(f"✅ Audio transcribed: {transcript}")
             
             # Process transcript
-            self.text = transcript.upper().translate(str.maketrans("", "", string.punctuation))
+            self.text = open(text_file, "r").read().strip().upper().translate(str.maketrans("", "", string.punctuation))
             print(f"✅ Processed transcript: {self.text}")
             
             # Save to final location
@@ -462,7 +462,7 @@ class AudioProcessor:
 
 def main():
     parser = argparse.ArgumentParser(description="Process audio file and generate pronunciation analysis")
-    parser.add_argument("--audio-file", help="Path to the input audio file (optional)")
+    parser.add_argument("--filename", help="Path to the input audio file (optional)")
     parser.add_argument("--duration", type=int, default=5, help="Duration of recording in seconds (default: 5)")
     parser.add_argument("--utterance-id", help="Optional utterance ID (default: 011c0201)")
     parser.add_argument("--output", help="Output JSON file path (default: analysis_results.json)")
@@ -475,23 +475,19 @@ def main():
         processor = AudioProcessor(utterance_id=args.utterance_id)
         
         # Process audio based on input
-        if args.audio_file:
-            print(f"\n📂 Processing existing audio file: {args.audio_file}")
-            processor.process_existing_audio(args.audio_file)
+        if args.filename:
+            filename = args.filename
+            audio_file = os.path.join(os.getcwd(), "test_data", "audio", filename + ".wav")
+            text_file = os.path.join(os.getcwd(), "test_data", "text", filename + ".txt")
+            print(f"\n📂 Processing existing audio file: {audio_file}")
+            processor.process_existing_audio(audio_file, text_file)
         else:
             print("\n🎙️ No audio file provided. Starting recording...")
             processor.record_and_process_audio(duration=args.duration)
         
         # Run analysis
         print("\n🔍 Running pronunciation analysis...")
-        results = processor.process()
-        
-        # Save results
-        output_file = args.output or "analysis_results.json"
-        with open(output_file, 'w') as f:
-            json.dump(results, f, indent=2)
-        
-        print(f"\n✅ Analysis results saved to {output_file}")
+        results = processor.process(filename)
         
         if results["processing_status"] == "error":
             print(f"❌ Error: {results['error_message']}", file=sys.stderr)
